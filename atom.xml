@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ygnight.xyz/"/>
-  <updated>2019-12-16T07:10:50.373Z</updated>
+  <updated>2019-12-18T08:19:01.665Z</updated>
   <id>http://ygnight.xyz/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用drony解决Flutter框架导致APP无法抓包情况</title>
+    <link href="http://ygnight.xyz/2019/12/18/%E4%BD%BF%E7%94%A8drony%E8%A7%A3%E5%86%B3Flutter%E6%A1%86%E6%9E%B6%E5%AF%BC%E8%87%B4APP%E6%97%A0%E6%B3%95%E6%8A%93%E5%8C%85%E6%83%85%E5%86%B5/"/>
+    <id>http://ygnight.xyz/2019/12/18/%E4%BD%BF%E7%94%A8drony%E8%A7%A3%E5%86%B3Flutter%E6%A1%86%E6%9E%B6%E5%AF%BC%E8%87%B4APP%E6%97%A0%E6%B3%95%E6%8A%93%E5%8C%85%E6%83%85%E5%86%B5/</id>
+    <published>2019-12-18T06:58:30.602Z</published>
+    <updated>2019-12-18T08:19:01.665Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>默认Flutter不会主动使用系统代理，需要单独设置。</p><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>使用抓包工具（Fiddler、burp等都可）抓包，模拟器安装drony抓包前设置指定代理。</p><h2 id="环境常规配置："><a href="#环境常规配置：" class="headerlink" title="环境常规配置："></a>环境常规配置：</h2><h3 id="1-抓包工具安装，证书安装；"><a href="#1-抓包工具安装，证书安装；" class="headerlink" title="1.抓包工具安装，证书安装；"></a>1.抓包工具安装，证书安装；</h3><h3 id="2-安卓模拟器安装，并安装drony-下载链接-https-pan-baidu-com-s-1PwWU6ekXstRJHOIAdrIM9Q-提取码-yjpx"><a href="#2-安卓模拟器安装，并安装drony-下载链接-https-pan-baidu-com-s-1PwWU6ekXstRJHOIAdrIM9Q-提取码-yjpx" class="headerlink" title="2.安卓模拟器安装，并安装drony(下载链接: https://pan.baidu.com/s/1PwWU6ekXstRJHOIAdrIM9Q 提取码: yjpx )"></a>2.安卓模拟器安装，并安装drony(下载链接: <a href="https://pan.baidu.com/s/1PwWU6ekXstRJHOIAdrIM9Q" target="_blank" rel="noopener">https://pan.baidu.com/s/1PwWU6ekXstRJHOIAdrIM9Q</a> 提取码: yjpx )</h3><h3 id="3-drony配置-这里试验抓闲鱼的数据包"><a href="#3-drony配置-这里试验抓闲鱼的数据包" class="headerlink" title="3.drony配置(这里试验抓闲鱼的数据包):"></a>3.drony配置(这里试验抓闲鱼的数据包):</h3><p>进入drony,此时是off关闭状态，</p><p><img src="0.png" alt="0"></p><p>向左划动，选择Wi-Fi</p><p><img src="1.png" alt="1"></p><p>对wi-fi进行设置</p><p><img src="2.png" alt="2"></p><p>选择代理模式为手动（Manual）</p><p><img src="3.png" alt="3"></p><p>Proxy type代理方式选择 Plain http proxy ，Filter default value 选择 Direct all</p><p><img src="4.png" alt="4"></p><p>选择Rule，设置应用规则</p><p><img src="5.png" alt="5">)<img src="6.png" alt="6"></p><p>Network id处 选择当前wifi的SSID，Action 选择 Local proxy chain，</p><p>Application 选择需要强制代理的APP，Hostname 及 Port 不填，表示所有的都会被强制代理。</p><p><img src="7.png" alt="7"></p><p>返回到主页面，点击off，变为启动状态</p><p><img src="8.png" alt="8"></p><h3 id="4-抓包工具配置："><a href="#4-抓包工具配置：" class="headerlink" title="4.抓包工具配置："></a>4.抓包工具配置：</h3><p>设置代理ip及端口</p><p><img src="8-2.png" alt="8-2"></p><p>后续进行抓包常规操作即可</p><p><img src="9.png" alt="9"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;原因&quot;&gt;&lt;a href=&quot;#原因&quot; class=&quot;headerlink&quot; title=&quot;原因&quot;&gt;&lt;/a&gt;原因&lt;/h2&gt;&lt;p&gt;默认Flutter不会主动使用系统代理，需要单独设置。&lt;/p&gt;
+&lt;h2 id=&quot;解决方案&quot;&gt;&lt;a href=&quot;#解决方案&quot; class=&quot;h
+      
+    
+    </summary>
+    
+    
+      <category term="渗透测试" scheme="http://ygnight.xyz/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="测试姿势" scheme="http://ygnight.xyz/tags/%E6%B5%8B%E8%AF%95%E5%A7%BF%E5%8A%BF/"/>
+    
+  </entry>
   
   <entry>
     <title>伪造mysql服务端实现任意文件读取</title>
