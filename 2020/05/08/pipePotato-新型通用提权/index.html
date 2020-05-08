@@ -16,7 +16,7 @@
   <meta name="description" content="">
   <meta name="author" content="YGnight">
   <meta name="keywords" content="">
-  <title>Archives ~ YGnight&#39;s blog</title>
+  <title>提权 ~ YGnight&#39;s blog</title>
 
   <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
 <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
@@ -40,7 +40,7 @@
 
 
 <body>
-  <header style="height: 80vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -119,6 +119,41 @@
             </span>
 
             
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  Friday, May 8th 2020, 10:35 am
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    112 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      1 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
           </div>
 
           
@@ -129,41 +164,83 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">4 posts in total.</p>
-  <hr>
-  
-    
       
-      <p class="h5">2020</p>
-    
-    <a href="/2020/05/08/pipePotato-%E6%96%B0%E5%9E%8B%E9%80%9A%E7%94%A8%E6%8F%90%E6%9D%83/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">提权</span>
-      <span style="float: right;">05-08</span>
-    </a>
-  
-    
-    <a href="/2020/01/13/PHP%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">PHP代码执行函数</span>
-      <span style="float: right;">01-13</span>
-    </a>
-  
-</div>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <h2 id="影响范围"><a href="#影响范围" class="headerlink" title="影响范围"></a>影响范围</h2><p>本地提权，对于任意windows Server 2012以上的windows  server版本(win8以上的某些windows版本也行)，从Service用户提到System 用户，在</p>
+<p>windows Server  2012，</p>
+<p>windows Server 2016，</p>
+<p>windows Server 2019</p>
+<p>全补丁的情况都测试成功了。</p>
+<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>GitHub上有源码，自行编译即可</p>
+<h2 id="具体操作"><a href="#具体操作" class="headerlink" title="具体操作"></a>具体操作</h2><p>cmd运行 </p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">whoami</span>               <span class="comment">#查看权限</span></span><br></pre></td></tr></table></figure>
 
-              </div>
-            </div>
+<p><img src="0.png" srcset="/img/loading.gif" alt="0"></p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">whoami <span class="string">/priv</span>         <span class="comment">#查看是否具有SeImpersonatePrivilege权限</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="1.png" srcset="/img/loading.gif" alt="1"></p>
+<figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PrintSpoofer.exe -i -c <span class="string">"whoami"</span>      #查看权限是否提升为<span class="keyword">system</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="2.png" srcset="/img/loading.gif" alt="2"></p>
+
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+              <span>
+                <i class="iconfont icon-inbox"></i>
+                
+                  <a class="hover-with-bg" href="/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95">渗透测试</a>
+                  &nbsp;
+                
+              </span>&nbsp;&nbsp;
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8">漏洞利用</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，转载请注明出处！</p>
+            
           </div>
         </div>
       </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;TOC</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+  </div>
+</div>
+
     
   </main>
 
@@ -242,6 +319,11 @@
 
 
 
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
 
 
   <script src="/lib/smooth-scroll/smooth-scroll.min.js" ></script>
@@ -291,7 +373,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "Archive&nbsp;",
+        "提权&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 160,
