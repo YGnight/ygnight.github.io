@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>提权</title>
+    <title>pipePotato-新型通用提权</title>
     <url>/2020/05/08/pipePotato-%E6%96%B0%E5%9E%8B%E9%80%9A%E7%94%A8%E6%8F%90%E6%9D%83/</url>
     <content><![CDATA[<h2 id="影响范围"><a href="#影响范围" class="headerlink" title="影响范围"></a>影响范围</h2><p>本地提权，对于任意windows Server 2012以上的windows  server版本(win8以上的某些windows版本也行)，从Service用户提到System 用户，在</p>
 <p>windows Server  2012，</p>
@@ -24,7 +24,7 @@
         <category>渗透测试</category>
       </categories>
       <tags>
-        <tag>漏洞利用</tag>
+        <tag>提权</tag>
       </tags>
   </entry>
   <entry>
