@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ygnight.xyz/"/>
-  <updated>2020-06-04T07:47:03.159Z</updated>
+  <updated>2020-06-19T07:32:21.282Z</updated>
   <id>http://ygnight.xyz/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>安装python-ldap模块过坑</title>
+    <link href="http://ygnight.xyz/2020/06/19/%E5%AE%89%E8%A3%85python%E6%A8%A1%E5%9D%97%E8%BF%87%E5%9D%91/"/>
+    <id>http://ygnight.xyz/2020/06/19/%E5%AE%89%E8%A3%85python%E6%A8%A1%E5%9D%97%E8%BF%87%E5%9D%91/</id>
+    <published>2020-06-19T07:13:48.922Z</published>
+    <updated>2020-06-19T07:32:21.282Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Linux安装python-ldap"><a href="#Linux安装python-ldap" class="headerlink" title="Linux安装python-ldap"></a>Linux安装python-ldap</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libsasl2-dev python-dev libldap2-dev libssl-dev</span><br></pre></td></tr></table></figure><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pip3 install python-ldap</span><br></pre></td></tr></table></figure><h2 id="Windows安装python-ldap"><a href="#Windows安装python-ldap" class="headerlink" title="Windows安装python-ldap"></a>Windows安装python-ldap</h2><p>安装 whl 包：<a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#python-ldap" target="_blank" rel="noopener">https://www.lfd.uci.edu/~gohlke/pythonlibs/#python-ldap</a></p><p><img src="0.png" alt="0"></p><p>下载相对应的whl包，再安装即可</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install pyldap-<span class="number">2</span>.<span class="number">4</span>.<span class="number">45</span>-cp37-cp37m-win_amd64.whl</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Linux安装python-ldap&quot;&gt;&lt;a href=&quot;#Linux安装python-ldap&quot; class=&quot;headerlink&quot; title=&quot;Linux安装python-ldap&quot;&gt;&lt;/a&gt;Linux安装python-ldap&lt;/h2&gt;&lt;figure c
+      
+    
+    </summary>
+    
+    
+      <category term="遇坑笔记" scheme="http://ygnight.xyz/categories/%E9%81%87%E5%9D%91%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="笔记" scheme="http://ygnight.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>永恒之黑(cve-2020-0796)配合msf获取shell</title>
