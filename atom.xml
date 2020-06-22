@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ygnight.xyz/"/>
-  <updated>2020-06-19T07:32:21.282Z</updated>
+  <updated>2020-06-22T03:22:20.940Z</updated>
   <id>http://ygnight.xyz/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>cve-2020-0787-Windows提权</title>
+    <link href="http://ygnight.xyz/2020/06/22/cve-2020-0787-Windows%E6%8F%90%E6%9D%83/"/>
+    <id>http://ygnight.xyz/2020/06/22/cve-2020-0787-Windows%E6%8F%90%E6%9D%83/</id>
+    <published>2020-06-22T03:14:28.288Z</published>
+    <updated>2020-06-22T03:22:20.940Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p><strong>Windows Background Intelligent Transfer Service 权限提升漏洞</strong></p><p>当Windows Background Intelligent Transfer Service  (BITS)未能正确地处理符号链接时，存在权限提升漏洞。成功利用此漏洞的攻击者可以覆盖导致提升状态的目标文件。要利用此漏洞，攻击者首先必须登录到系统。然后，攻击者可以运行巧尽心思构建的应用程序，利用此漏洞并控制受影响的系统。</p><h2 id="影响范围"><a href="#影响范围" class="headerlink" title="影响范围"></a>影响范围</h2><p>Windows 10，Server 2016，Server 2019，Server version 1803，Server version 1903，Server version 1909，Windows 8.1，Server 2012，Server 2012 R2</p><h2 id="利用"><a href="#利用" class="headerlink" title="利用"></a>利用</h2><p><img src="0.png" alt="0"></p><p><img src="1.png" alt="1"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;摘要&quot;&gt;&lt;a href=&quot;#摘要&quot; class=&quot;headerlink&quot; title=&quot;摘要&quot;&gt;&lt;/a&gt;摘要&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Windows Background Intelligent Transfer Service 权限提升漏洞&lt;/strong
+      
+    
+    </summary>
+    
+    
+      <category term="渗透测试" scheme="http://ygnight.xyz/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="提权" scheme="http://ygnight.xyz/tags/%E6%8F%90%E6%9D%83/"/>
+    
+  </entry>
   
   <entry>
     <title>安装python-ldap模块过坑</title>
