@@ -5,9 +5,9 @@
   
   <link href="/blog/atom.xml" rel="self"/>
   
-  <link href="http://ygnight.xyz/"/>
+  <link href="https://yejinpoxiao.gitee.io/"/>
   <updated>2020-08-17T15:14:36.297Z</updated>
-  <id>http://ygnight.xyz/</id>
+  <id>https://yejinpoxiao.gitee.io/</id>
   
   <author>
     <name>YGnight</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>深信服EDR终端检测平台RCE漏洞</title>
-    <link href="http://ygnight.xyz/2020/08/17/%E6%B7%B1%E4%BF%A1%E6%9C%8DEDR%E7%BB%88%E7%AB%AF%E6%A3%80%E6%B5%8B%E5%B9%B3%E5%8F%B0RCE%E6%BC%8F%E6%B4%9E/"/>
-    <id>http://ygnight.xyz/2020/08/17/%E6%B7%B1%E4%BF%A1%E6%9C%8DEDR%E7%BB%88%E7%AB%AF%E6%A3%80%E6%B5%8B%E5%B9%B3%E5%8F%B0RCE%E6%BC%8F%E6%B4%9E/</id>
+    <link href="https://yejinpoxiao.gitee.io/2020/08/17/%E6%B7%B1%E4%BF%A1%E6%9C%8DEDR%E7%BB%88%E7%AB%AF%E6%A3%80%E6%B5%8B%E5%B9%B3%E5%8F%B0RCE%E6%BC%8F%E6%B4%9E/"/>
+    <id>https://yejinpoxiao.gitee.io/2020/08/17/%E6%B7%B1%E4%BF%A1%E6%9C%8DEDR%E7%BB%88%E7%AB%AF%E6%A3%80%E6%B5%8B%E5%B9%B3%E5%8F%B0RCE%E6%BC%8F%E6%B4%9E/</id>
     <published>2020-08-17T15:02:48.856Z</published>
     <updated>2020-08-17T15:14:36.297Z</updated>
     
@@ -35,17 +35,17 @@
     </summary>
     
     
-      <category term="漏洞告警" scheme="http://ygnight.xyz/categories/%E6%BC%8F%E6%B4%9E%E5%91%8A%E8%AD%A6/"/>
+      <category term="漏洞告警" scheme="https://yejinpoxiao.gitee.io/categories/%E6%BC%8F%E6%B4%9E%E5%91%8A%E8%AD%A6/"/>
     
     
-      <category term="漏洞利用" scheme="http://ygnight.xyz/tags/%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8/"/>
+      <category term="漏洞利用" scheme="https://yejinpoxiao.gitee.io/tags/%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8/"/>
     
   </entry>
   
   <entry>
     <title>cve-2020-0787-Windows提权</title>
-    <link href="http://ygnight.xyz/2020/06/22/cve-2020-0787-Windows%E6%8F%90%E6%9D%83/"/>
-    <id>http://ygnight.xyz/2020/06/22/cve-2020-0787-Windows%E6%8F%90%E6%9D%83/</id>
+    <link href="https://yejinpoxiao.gitee.io/2020/06/22/cve-2020-0787-Windows%E6%8F%90%E6%9D%83/"/>
+    <id>https://yejinpoxiao.gitee.io/2020/06/22/cve-2020-0787-Windows%E6%8F%90%E6%9D%83/</id>
     <published>2020-06-22T03:14:28.288Z</published>
     <updated>2020-06-22T03:22:20.940Z</updated>
     
@@ -61,17 +61,17 @@
     </summary>
     
     
-      <category term="渗透测试" scheme="http://ygnight.xyz/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+      <category term="渗透测试" scheme="https://yejinpoxiao.gitee.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="提权" scheme="http://ygnight.xyz/tags/%E6%8F%90%E6%9D%83/"/>
+      <category term="提权" scheme="https://yejinpoxiao.gitee.io/tags/%E6%8F%90%E6%9D%83/"/>
     
   </entry>
   
   <entry>
     <title>安装python-ldap模块过坑</title>
-    <link href="http://ygnight.xyz/2020/06/19/%E5%AE%89%E8%A3%85python%E6%A8%A1%E5%9D%97%E8%BF%87%E5%9D%91/"/>
-    <id>http://ygnight.xyz/2020/06/19/%E5%AE%89%E8%A3%85python%E6%A8%A1%E5%9D%97%E8%BF%87%E5%9D%91/</id>
+    <link href="https://yejinpoxiao.gitee.io/2020/06/19/%E5%AE%89%E8%A3%85python%E6%A8%A1%E5%9D%97%E8%BF%87%E5%9D%91/"/>
+    <id>https://yejinpoxiao.gitee.io/2020/06/19/%E5%AE%89%E8%A3%85python%E6%A8%A1%E5%9D%97%E8%BF%87%E5%9D%91/</id>
     <published>2020-06-19T07:13:48.922Z</published>
     <updated>2020-06-19T07:32:21.282Z</updated>
     
@@ -87,17 +87,17 @@
     </summary>
     
     
-      <category term="遇坑笔记" scheme="http://ygnight.xyz/categories/%E9%81%87%E5%9D%91%E7%AC%94%E8%AE%B0/"/>
+      <category term="遇坑笔记" scheme="https://yejinpoxiao.gitee.io/categories/%E9%81%87%E5%9D%91%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="笔记" scheme="http://ygnight.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://yejinpoxiao.gitee.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>永恒之黑(cve-2020-0796)配合msf获取shell</title>
-    <link href="http://ygnight.xyz/2020/06/04/%E6%B0%B8%E6%81%92%E4%B9%8B%E9%BB%91(cve-2020-0796)%E9%85%8D%E5%90%88msf%E8%8E%B7%E5%8F%96shell/"/>
-    <id>http://ygnight.xyz/2020/06/04/%E6%B0%B8%E6%81%92%E4%B9%8B%E9%BB%91(cve-2020-0796)%E9%85%8D%E5%90%88msf%E8%8E%B7%E5%8F%96shell/</id>
+    <link href="https://yejinpoxiao.gitee.io/2020/06/04/%E6%B0%B8%E6%81%92%E4%B9%8B%E9%BB%91(cve-2020-0796)%E9%85%8D%E5%90%88msf%E8%8E%B7%E5%8F%96shell/"/>
+    <id>https://yejinpoxiao.gitee.io/2020/06/04/%E6%B0%B8%E6%81%92%E4%B9%8B%E9%BB%91(cve-2020-0796)%E9%85%8D%E5%90%88msf%E8%8E%B7%E5%8F%96shell/</id>
     <published>2020-06-04T07:05:29.171Z</published>
     <updated>2020-07-08T09:49:23.561Z</updated>
     
@@ -114,17 +114,17 @@
     </summary>
     
     
-      <category term="渗透测试" scheme="http://ygnight.xyz/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+      <category term="渗透测试" scheme="https://yejinpoxiao.gitee.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="提权" scheme="http://ygnight.xyz/tags/%E6%8F%90%E6%9D%83/"/>
+      <category term="提权" scheme="https://yejinpoxiao.gitee.io/tags/%E6%8F%90%E6%9D%83/"/>
     
   </entry>
   
   <entry>
     <title>pipePotato-新型通用提权</title>
-    <link href="http://ygnight.xyz/2020/05/08/pipePotato-%E6%96%B0%E5%9E%8B%E9%80%9A%E7%94%A8%E6%8F%90%E6%9D%83/"/>
-    <id>http://ygnight.xyz/2020/05/08/pipePotato-%E6%96%B0%E5%9E%8B%E9%80%9A%E7%94%A8%E6%8F%90%E6%9D%83/</id>
+    <link href="https://yejinpoxiao.gitee.io/2020/05/08/pipePotato-%E6%96%B0%E5%9E%8B%E9%80%9A%E7%94%A8%E6%8F%90%E6%9D%83/"/>
+    <id>https://yejinpoxiao.gitee.io/2020/05/08/pipePotato-%E6%96%B0%E5%9E%8B%E9%80%9A%E7%94%A8%E6%8F%90%E6%9D%83/</id>
     <published>2020-05-08T02:35:08.963Z</published>
     <updated>2020-06-04T07:20:32.731Z</updated>
     
@@ -140,17 +140,17 @@
     </summary>
     
     
-      <category term="渗透测试" scheme="http://ygnight.xyz/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+      <category term="渗透测试" scheme="https://yejinpoxiao.gitee.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="提权" scheme="http://ygnight.xyz/tags/%E6%8F%90%E6%9D%83/"/>
+      <category term="提权" scheme="https://yejinpoxiao.gitee.io/tags/%E6%8F%90%E6%9D%83/"/>
     
   </entry>
   
   <entry>
     <title>PHP代码执行函数</title>
-    <link href="http://ygnight.xyz/2020/01/13/PHP%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/"/>
-    <id>http://ygnight.xyz/2020/01/13/PHP%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</id>
+    <link href="https://yejinpoxiao.gitee.io/2020/01/13/PHP%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/"/>
+    <id>https://yejinpoxiao.gitee.io/2020/01/13/PHP%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</id>
     <published>2020-01-13T08:20:20.808Z</published>
     <updated>2020-01-17T09:40:21.612Z</updated>
     
@@ -167,17 +167,17 @@
     </summary>
     
     
-      <category term="渗透测试" scheme="http://ygnight.xyz/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+      <category term="渗透测试" scheme="https://yejinpoxiao.gitee.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="笔记" scheme="http://ygnight.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://yejinpoxiao.gitee.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>使用drony解决APP无法抓包</title>
-    <link href="http://ygnight.xyz/2019/12/18/%E4%BD%BF%E7%94%A8drony%E8%A7%A3%E5%86%B3APP%E6%97%A0%E6%B3%95%E6%8A%93%E5%8C%85/"/>
-    <id>http://ygnight.xyz/2019/12/18/%E4%BD%BF%E7%94%A8drony%E8%A7%A3%E5%86%B3APP%E6%97%A0%E6%B3%95%E6%8A%93%E5%8C%85/</id>
+    <link href="https://yejinpoxiao.gitee.io/2019/12/18/%E4%BD%BF%E7%94%A8drony%E8%A7%A3%E5%86%B3APP%E6%97%A0%E6%B3%95%E6%8A%93%E5%8C%85/"/>
+    <id>https://yejinpoxiao.gitee.io/2019/12/18/%E4%BD%BF%E7%94%A8drony%E8%A7%A3%E5%86%B3APP%E6%97%A0%E6%B3%95%E6%8A%93%E5%8C%85/</id>
     <published>2019-12-18T06:58:30.602Z</published>
     <updated>2020-06-08T06:46:20.705Z</updated>
     
@@ -194,17 +194,17 @@
     </summary>
     
     
-      <category term="渗透测试" scheme="http://ygnight.xyz/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+      <category term="渗透测试" scheme="https://yejinpoxiao.gitee.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="测试姿势" scheme="http://ygnight.xyz/tags/%E6%B5%8B%E8%AF%95%E5%A7%BF%E5%8A%BF/"/>
+      <category term="测试姿势" scheme="https://yejinpoxiao.gitee.io/tags/%E6%B5%8B%E8%AF%95%E5%A7%BF%E5%8A%BF/"/>
     
   </entry>
   
   <entry>
     <title>伪造mysql服务端实现任意文件读取</title>
-    <link href="http://ygnight.xyz/2019/12/13/%E4%BC%AA%E9%80%A0mysql%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%9E%E7%8E%B0%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96/"/>
-    <id>http://ygnight.xyz/2019/12/13/%E4%BC%AA%E9%80%A0mysql%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%9E%E7%8E%B0%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96/</id>
+    <link href="https://yejinpoxiao.gitee.io/2019/12/13/%E4%BC%AA%E9%80%A0mysql%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%9E%E7%8E%B0%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96/"/>
+    <id>https://yejinpoxiao.gitee.io/2019/12/13/%E4%BC%AA%E9%80%A0mysql%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%9E%E7%8E%B0%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96/</id>
     <published>2019-12-13T09:40:29.302Z</published>
     <updated>2020-06-04T10:03:45.769Z</updated>
     
@@ -221,10 +221,10 @@
     </summary>
     
     
-      <category term="渗透测试" scheme="http://ygnight.xyz/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+      <category term="渗透测试" scheme="https://yejinpoxiao.gitee.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="漏洞利用" scheme="http://ygnight.xyz/tags/%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8/"/>
+      <category term="漏洞利用" scheme="https://yejinpoxiao.gitee.io/tags/%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8/"/>
     
   </entry>
   
