@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>通达OA任意文件删除实现getshell</title>
+    <url>/2020/08/19/%E9%80%9A%E8%BE%BEOA%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E5%88%A0%E9%99%A4%E5%AE%9E%E7%8E%B0getshell/</url>
+    <content><![CDATA[<h2 id="产品概述"><a href="#产品概述" class="headerlink" title="产品概述"></a>产品概述</h2><p>​         通达OA（Office Anywhere网络智能办公系统）是由北京通达信科科技有限公司自主研发的协同办公自动化软件，是与中国企业管理实践相结合形成的综合管理办公平台。     </p>
+<p>通达OA为各行业不同规模的众多用户提供信息化管理能力，包括流程审批、行政办公、日常事务、数据统计分析、即时通讯、移动办公等，帮助广大用户降低沟通和管理成本，提升生产和决策效率。     </p>
+<p>此外，通达OA通过融合不同的信息化资源，打通信息“孤岛”，精细化流程管理，改善管理模式，实现资源的优化配置和高效运转，全面提升企业竞争力。它是通达信科在二十余年从事管理软件研发和服务过程中集技术创新、项目实践、先进的管理思想和中肯的客户建议为一体的完美结晶。     </p>
+<h2 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>本地搭建通达OA环境，本次试验使用版本为11.6（其余版本自行测试）</p>
+<p><img src="0.png" alt="0"></p>
+<p>使用exp脚本进行getshell</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">python3 tongdaOA_rce.py http://<span class="number">192</span>.<span class="number">168</span>.<span class="number">168</span>.<span class="number">133</span>:<span class="number">8080</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="1.png" alt="1"></p>
+<p>成功上传一句话，连接webshell</p>
+<p><img src="2.png" alt="2"></p>
+<p>注：此漏洞利用会导致删除inc文件夹下的auth.inc.php，从而导致系统无法正常使用，禁止进行未授权测试。</p>
+]]></content>
+      <categories>
+        <category>漏洞告警</category>
+      </categories>
+      <tags>
+        <tag>漏洞利用</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>深信服EDR v3.2.21 (20200703)源码泄露</title>
     <url>/2020/08/19/%E6%B7%B1%E4%BF%A1%E6%9C%8DEDR%20v3.2.21%20(20200703)%E6%BA%90%E7%A0%81%E6%B3%84%E9%9C%B2/</url>
     <content><![CDATA[<h2 id="告警信息"><a href="#告警信息" class="headerlink" title="告警信息"></a>告警信息</h2><p>解决之前版本的远程任意代码注入漏洞，深信服EDR 更新到3.2.21 版本</p>
