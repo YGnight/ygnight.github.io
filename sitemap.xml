@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yejinpoxiao.xyz/2020/09/18/Exchange%20Server%20%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E(CVE-2020-16875)/</loc>
+    
+    <lastmod>2020-09-18T02:34:27.862Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yejinpoxiao.xyz/2020/09/18/%E6%B7%B1X%E6%9C%8D%E6%9F%90PN%E5%AD%98%E5%9C%A8%E4%BB%BB%E6%84%8F%E9%87%8D%E7%BD%AE%E7%BB%91%E5%AE%9A%E6%89%8B%E6%9C%BA%E5%8F%B7%E6%BC%8F%E6%B4%9E/</loc>
+    
+    <lastmod>2020-09-18T02:28:57.797Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yejinpoxiao.xyz/2020/09/18/Wordpress%20File-manager%20%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/</loc>
+    
+    <lastmod>2020-09-18T02:13:18.858Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yejinpoxiao.xyz/2020/09/13/2020HW%E7%AC%AC%E4%BA%8C%E5%BC%B9/</loc>
+    
+    <lastmod>2020-09-18T02:02:26.660Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yejinpoxiao.xyz/2020/09/18/Apache%20DolphinScheduler%E9%AB%98%E5%8D%B1%E6%BC%8F%E6%B4%9E%20/</loc>
+    
+    <lastmod>2020-09-18T02:02:03.836Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yejinpoxiao.xyz/2020/06/22/cve-2020-0787-Windows%E6%8F%90%E6%9D%83/</loc>
+    
+    <lastmod>2020-09-18T01:46:34.875Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yejinpoxiao.xyz/2020/09/15/NetLogon%E7%89%B9%E6%9D%83%E6%8F%90%E5%8D%87%E6%BC%8F%E6%B4%9E(CVE-2020-1472)/</loc>
     
     <lastmod>2020-09-15T15:50:02.633Z</lastmod>
@@ -19,13 +61,6 @@
     <loc>https://yejinpoxiao.xyz/2020/09/13/2020HW%E7%AC%AC%E4%B8%89%E5%BC%B9/</loc>
     
     <lastmod>2020-09-13T15:54:44.383Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yejinpoxiao.xyz/2020/09/13/2020HW%E7%AC%AC%E4%BA%8C%E5%BC%B9/</loc>
-    
-    <lastmod>2020-09-12T18:06:38.972Z</lastmod>
     
   </url>
   
@@ -96,13 +131,6 @@
     <loc>https://yejinpoxiao.xyz/2020/06/04/%E6%B0%B8%E6%81%92%E4%B9%8B%E9%BB%91(cve-2020-0796)%E9%85%8D%E5%90%88msf%E8%8E%B7%E5%8F%96shell/</loc>
     
     <lastmod>2020-07-08T09:49:23.561Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yejinpoxiao.xyz/2020/06/22/cve-2020-0787-Windows%E6%8F%90%E6%9D%83/</loc>
-    
-    <lastmod>2020-06-22T03:22:20.940Z</lastmod>
     
   </url>
   

