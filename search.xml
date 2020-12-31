@@ -3,7 +3,7 @@
   <entry>
     <title>深x服SSL VPN命令注入漏洞</title>
     <url>/2020/12/31/%E6%B7%B1X%E6%9C%8DSSL%20VPN%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5%E6%BC%8F%E6%B4%9E/</url>
-    <content><![CDATA[<h2 id="漏洞概述"><a href="#漏洞概述" class="headerlink" title="漏洞概述"></a>漏洞概述</h2><p>2020年12月30日，<code>SSL VPN</code>发布了<code>SSL VPN 命令注入漏洞</code>的风险通告，该漏洞暂无编号 ，漏洞等级：<code>高危</code></p>
+    <content><![CDATA[<h2 id="漏洞概述"><a href="#漏洞概述" class="headerlink" title="漏洞概述"></a>漏洞概述</h2><p>2020年12月30日，网上发布了<code>SSL VPN 命令注入漏洞</code>的风险通告，该漏洞暂无编号 ，漏洞等级：<code>高危</code></p>
 <p>深信服<code>SSL VPN</code>产品的某接口中<code>url</code>参数存在注入漏洞，攻击者可利用该漏洞获取<code>SSL VPN</code>设备的控制权限。</p>
 <h2 id="影响版本"><a href="#影响版本" class="headerlink" title="影响版本"></a>影响版本</h2><p>深信服:SSL VPN: &lt;=7.6.7</p>
 <h2 id="修复建议"><a href="#修复建议" class="headerlink" title="修复建议"></a>修复建议</h2><p>升级到SSL VPN 7.6.7以上版本或安装最新安全补丁包，用户可以利用深信服提供的漏洞查询链接进行自查：<a href="https://www.sangfor.com.cn/technical-support-and-service/security-centre/sec-check" target="_blank" rel="noopener">漏洞查询入口</a></p>
