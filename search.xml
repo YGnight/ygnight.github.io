@@ -109,7 +109,7 @@
   </entry>
   <entry>
     <title>两个Apache DolphinScheduler高危漏洞</title>
-    <url>/2020/09/18/Apache%20DolphinScheduler%E9%AB%98%E5%8D%B1%E6%BC%8F%E6%B4%9E%20/</url>
+    <url>/2020/09/18/%E4%B8%A4%E4%B8%AAApache%20DolphinScheduler%E9%AB%98%E5%8D%B1%E6%BC%8F%E6%B4%9E%20/</url>
     <content><![CDATA[<h2 id="产品概述"><a href="#产品概述" class="headerlink" title="产品概述"></a>产品概述</h2><p>Apache  DolphinScheduler(incubator,原EasyScheduler）是一个分布式工作流任务调度系统，主要解决数据研发ETL错综复杂的依赖关系，不能直观监控任务健康状态。DolphinScheduler以DAG流式的方式将Task组装起来，可实时监控任务的运行状态，同时支持重试、从指定节点恢复失败、暂停及Kill任务等操作。</p>
 <h2 id="一、Apache-DolphinScheduler权限覆盖漏洞（CVE-2020-13922）"><a href="#一、Apache-DolphinScheduler权限覆盖漏洞（CVE-2020-13922）" class="headerlink" title="一、Apache DolphinScheduler权限覆盖漏洞（CVE-2020-13922）"></a>一、Apache DolphinScheduler权限覆盖漏洞（CVE-2020-13922）</h2><h3 id="详情"><a href="#详情" class="headerlink" title="详情"></a>详情</h3><p>该漏洞导致普通用户可通过api interface在DolphinScheduler 系统中覆盖其他用户的密码：api interface /dolphinscheduler/users/update。</p>
 <h3 id="影响范围"><a href="#影响范围" class="headerlink" title="影响范围"></a>影响范围</h3><p>Apache DolphinScheduler    1.2.0</p>
